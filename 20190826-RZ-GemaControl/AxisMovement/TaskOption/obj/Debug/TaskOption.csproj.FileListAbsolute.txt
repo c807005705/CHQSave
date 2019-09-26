@@ -1,0 +1,12 @@
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\obj\Debug\TaskOption.csprojAssemblyReference.cache
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\bin\Debug\TaskOption.dll
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\bin\Debug\TaskOption.pdb
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\bin\Debug\Device_Link_LTSMC.dll
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\bin\Debug\Interface.dll
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\bin\Debug\Newtonsoft.Json.dll
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\bin\Debug\Interface.pdb
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\bin\Debug\Device_Link_LTSMC.xml
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\bin\Debug\Newtonsoft.Json.xml
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\obj\Debug\TaskOption.csproj.CopyComplete
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\obj\Debug\TaskOption.dll
+C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\TaskOption\obj\Debug\TaskOption.pdb

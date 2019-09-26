@@ -1,0 +1,112 @@
+[2019/9/19 10:12:51 , Normal] ->  
+ [2019/9/19 10:37:21 , Normal] ->  
+ [2019/9/19 15:00:10 , Normal] ->  
+ [2019/9/19 15:09:21 , Normal] ->  
+ [2019/9/19 15:28:17 , Normal] ->  
+ [2019/9/19 15:28:37 , Normal] ->  
+ [2019/9/19 15:35:32 , Normal] ->  
+ [2019/9/19 15:40:03 , Normal] ->  
+ [2019/9/19 15:42:00 , Normal] ->  
+ [2019/9/19 15:44:26 , Normal] ->  
+ [2019/9/19 15:48:48 , Normal] ->  
+ [2019/9/19 15:51:20 , Normal] ->  
+ [2019/9/19 15:57:36 , Normal] ->  
+ [2019/9/19 15:57:49 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RZ_AutoGemaControl.GameConsole.button2_Click_1(Object sender, EventArgs e) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 414
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 383
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 67 
+ [2019/9/19 15:58:03 , Normal] ->  
+ [2019/9/19 15:58:33 , Erro] -> 程序运行错误:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“GameConsole”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Form.UpdateMenuHandles(MainMenu menu, Boolean forceRedraw)
+   在 System.Windows.Forms.Form.UpdateMenuHandles()
+   在 System.Windows.Forms.Form.set_MainMenuStrip(MenuStrip value)
+   在 System.Windows.Forms.Form.Dispose(Boolean disposing)
+   在 RZ_AutoGemaControl.GameConsole.Dispose(Boolean disposing) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.Designer.cs:行号 20
+   在 System.ComponentModel.Component.Dispose()
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 68 
+ [2019/9/19 15:59:35 , Normal] ->  
+ [2019/9/19 16:04:06 , Normal] ->  
+ [2019/9/19 16:08:59 , Normal] ->  
+ [2019/9/19 16:10:44 , Normal] ->  
+ [2019/9/19 16:16:42 , Normal] ->  
+ [2019/9/19 16:22:25 , Normal] ->  
+ [2019/9/19 16:31:34 , Normal] ->  
+ [2019/9/19 16:33:24 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.SetAxisSTime()
+   在 Device_Link_LTSMC.LTSMC_Axis.Run()
+   在 Device_Link_LTSMC.LTSMC_Axis.SetRunDistanceSync(Double move)
+   在 ControlDec.ConDevice.AxisMoveTo(Axis axis, Double position, Double speed) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 229
+   在 ControlDec.ConDevice.MoveToPositionXY(Double x, Double y) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 247
+   在 ActInterface.Action.BottomRight(Int32 x, Int32 y) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ActInterface\Action.cs:行号 82
+   在 RZ_AutoGemaControl.GameConsole.button2_Click_1(Object sender, EventArgs e) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 415
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 383
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 67 
+ [2019/9/19 16:33:37 , Normal] ->  
+ [2019/9/19 16:37:03 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.SetAxisSTime()
+   在 Device_Link_LTSMC.LTSMC_Axis.Run()
+   在 Device_Link_LTSMC.LTSMC_Axis.SetRunDistanceSync(Double move)
+   在 ControlDec.ConDevice.AxisMoveTo(Axis axis, Double position, Double speed) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 229
+   在 ControlDec.ConDevice.MoveToPositionXY(Double x, Double y) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 247
+   在 ActInterface.Action.BottomRight(Int32 x, Int32 y) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ActInterface\Action.cs:行号 82
+   在 RZ_AutoGemaControl.GameConsole.button2_Click_1(Object sender, EventArgs e) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 415
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 383
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 67 
+ [2019/9/19 16:37:11 , Normal] ->  
+ [2019/9/19 16:42:53 , Normal] ->  
+ [2019/9/19 16:44:06 , Normal] ->  
+ [2019/9/19 16:46:31 , Normal] ->  
+ [2019/9/19 16:48:05 , Normal] ->  
+ [2019/9/19 16:51:58 , Normal] ->  
+ [2019/9/19 16:52:31 , Normal] ->  
+ [2019/9/19 16:56:46 , Normal] ->  
+ [2019/9/19 16:59:56 , Normal] ->  
+ [2019/9/19 17:01:52 , Normal] ->  
+ [2019/9/19 17:08:25 , Normal] ->  
+ [2019/9/19 17:11:27 , Normal] ->  
+ [2019/9/19 17:12:26 , Normal] ->  
+ [2019/9/19 17:14:04 , Normal] ->  
+ [2019/9/19 17:19:13 , Normal] ->  
+ 

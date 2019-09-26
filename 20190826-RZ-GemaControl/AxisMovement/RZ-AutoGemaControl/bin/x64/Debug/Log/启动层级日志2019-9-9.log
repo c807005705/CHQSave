@@ -1,0 +1,558 @@
+[2019/9/9 9:28:58 , Normal] ->  
+ [2019/9/9 9:30:33 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: X正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__15_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 105
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 285
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 9:34:08 , Normal] ->  
+ [2019/9/9 9:34:22 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__15_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 105
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 290
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 9:38:25 , Normal] ->  
+ [2019/9/9 9:38:44 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__15_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 116
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 301
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 9:41:05 , Normal] ->  
+ [2019/9/9 9:41:12 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__15_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 115
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 300
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 9:56:03 , Normal] ->  
+ [2019/9/9 9:56:22 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: V正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__15_3() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 119
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 300
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 10:07:04 , Normal] ->  
+ [2019/9/9 10:11:56 , Normal] ->  
+ [2019/9/9 10:12:04 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 309
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 10:12:09 , Normal] ->  
+ [2019/9/9 10:12:39 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: X正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 309
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 10:40:34 , Normal] ->  
+ [2019/9/9 10:41:25 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: X正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 311
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 10:41:32 , Normal] ->  
+ [2019/9/9 10:52:23 , Normal] ->  
+ [2019/9/9 10:54:58 , Normal] ->  
+ [2019/9/9 10:55:28 , Normal] ->  
+ [2019/9/9 10:56:09 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 311
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 10:57:48 , Normal] ->  
+ [2019/9/9 10:58:20 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: X正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 311
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 10:58:29 , Normal] ->  
+ [2019/9/9 10:58:46 , Erro] -> 程序运行错误:Device_Link_LTSMC.LSTMCException: X正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 311
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 10:58:53 , Normal] ->  
+ [2019/9/9 11:01:49 , Normal] ->  
+ [2019/9/9 11:03:13 , Normal] ->  
+ [2019/9/9 11:03:48 , Normal] ->  
+ [2019/9/9 11:07:37 , Normal] ->  
+ [2019/9/9 11:10:45 , Normal] ->  
+ [2019/9/9 11:11:12 , Erro] -> 程序运行错误:System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 311
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 11:11:16 , Normal] ->  
+ [2019/9/9 11:11:26 , Erro] -> 程序运行错误:System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Device_Link_LTSMC.LSTMCException: X正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 311
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 11:11:32 , Normal] ->  
+ [2019/9/9 11:13:43 , Normal] ->  
+ [2019/9/9 11:14:03 , Erro] -> 程序运行错误:System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Device_Link_LTSMC.LSTMCException: X正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 311
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 11:14:08 , Normal] ->  
+ [2019/9/9 11:14:30 , Erro] -> 程序运行错误:System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Device_Link_LTSMC.LSTMCException: X正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 311
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 11:14:37 , Normal] ->  
+ [2019/9/9 11:16:40 , Normal] ->  
+ [2019/9/9 11:18:31 , Erro] -> 程序运行错误:System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__16_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 311
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 11:18:35 , Normal] ->  
+ [2019/9/9 13:11:00 , Normal] ->  
+ [2019/9/9 13:11:40 , Erro] -> 程序运行错误:System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__17_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 313
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 13:11:46 , Normal] ->  
+ [2019/9/9 13:12:02 , Erro] -> 程序运行错误:System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__17_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 313
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 13:12:06 , Normal] ->  
+ [2019/9/9 13:13:27 , Normal] ->  
+ [2019/9/9 13:14:12 , Erro] -> 程序运行错误:System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Device_Link_LTSMC.LSTMCException: X正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__17_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 313
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 13:14:16 , Normal] ->  
+ [2019/9/9 13:14:42 , Erro] -> 程序运行错误:System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Device_Link_LTSMC.LSTMCException: Z正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__17_2() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 119
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 313
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 13:14:48 , Normal] ->  
+ [2019/9/9 13:15:12 , Normal] ->  
+ [2019/9/9 13:16:00 , Normal] ->  
+ [2019/9/9 13:25:42 , Normal] ->  
+ [2019/9/9 13:27:49 , Erro] -> 程序运行错误:System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Device_Link_LTSMC.LSTMCException: Y正在执行上一次的任务，请先关闭或结束前一次的任务!
+   在 Device_Link_LTSMC.LTSMC_Axis.CheckAxis()
+   在 Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition()
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 122
+   在 RZ_AutoGemaControl.GameConsole.<GetCoordinates>b__17_1() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 117
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Delegate.DynamicInvokeImpl(Object[] args)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   在 System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 314
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 64 
+ [2019/9/9 13:50:56 , Normal] ->  
+ [2019/9/9 14:00:40 , Normal] ->  
+ [2019/9/9 14:01:08 , Normal] ->  
+ [2019/9/9 14:06:33 , Normal] ->  
+ [2019/9/9 14:07:10 , Normal] ->  
+ [2019/9/9 14:07:53 , Normal] ->  
+ [2019/9/9 14:08:03 , Normal] ->  
+ [2019/9/9 14:08:17 , Normal] ->  
+ [2019/9/9 15:17:48 , Normal] ->  
+ [2019/9/9 15:18:56 , Normal] ->  
+ [2019/9/9 15:20:41 , Normal] ->  
+ [2019/9/9 15:24:26 , Normal] ->  
+ [2019/9/9 15:38:50 , Normal] ->  
+ [2019/9/9 15:53:15 , Normal] ->  
+ [2019/9/9 16:07:28 , Normal] ->  
+ [2019/9/9 16:08:57 , Normal] ->  
+ [2019/9/9 16:20:39 , Normal] ->  
+ [2019/9/9 16:45:21 , Normal] ->  
+ [2019/9/9 16:47:02 , Normal] ->  
+ [2019/9/9 16:51:31 , Normal] ->  
+ [2019/9/9 16:51:59 , Normal] ->  
+ [2019/9/9 16:52:33 , Normal] ->  
+ [2019/9/9 16:53:32 , Normal] ->  
+ [2019/9/9 16:53:58 , Normal] ->  
+ [2019/9/9 16:54:43 , Normal] ->  
+ [2019/9/9 16:56:49 , Normal] ->  
+ [2019/9/9 17:00:42 , Normal] ->  
+ [2019/9/9 17:01:11 , Normal] ->  
+ [2019/9/9 17:04:02 , Normal] ->  
+ 

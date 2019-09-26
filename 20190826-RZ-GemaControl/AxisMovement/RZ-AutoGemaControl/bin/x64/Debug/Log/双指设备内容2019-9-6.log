@@ -1,0 +1,90 @@
+[2019/9/6 15:49:38 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 连接错误!请检查连接
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 175 
+ [2019/9/6 16:14:55 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 连接错误!请检查连接
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 175 
+ [2019/9/6 16:16:00 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 连接错误!请检查连接
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 175 
+ [2019/9/6 16:16:58 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 连接错误!请检查连接
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 175 
+ [2019/9/6 16:29:28 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 16:29:28 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 16:30:11 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 16:30:11 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 16:30:53 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 16:31:00 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 16:34:26 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 16:34:27 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 16:35:09 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 16:35:11 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 16:36:07 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 16:36:07 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 16:40:23 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 16:40:23 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 16:53:23 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 16:53:24 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 16:58:22 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 16:58:27 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:10:02 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:10:02 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:15:54 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:15:56 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:24:27 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:24:28 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:26:51 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:26:52 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:27:27 , Normal] -> 所有垂直轴向归零成功 
+ [2019/9/6 17:30:43 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 连接错误!请检查连接
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 183 
+ [2019/9/6 17:31:12 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:31:12 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:31:22 , Normal] -> 所有垂直轴向归零成功 
+ [2019/9/6 17:32:39 , Normal] -> 水平轴向归零成功 
+ [2019/9/6 17:32:39 , Normal] -> 所有坐标清零成功 
+ [2019/9/6 17:34:15 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:34:15 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:35:05 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:35:05 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:35:47 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:35:47 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:35:49 , Normal] -> 所有垂直轴向归零成功 
+ [2019/9/6 17:35:50 , Normal] -> 水平轴向归零成功 
+ [2019/9/6 17:35:50 , Normal] -> 所有坐标清零成功 
+ [2019/9/6 17:51:25 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:51:25 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:51:25 , Normal] -> 所有垂直轴向归零成功 
+ [2019/9/6 17:51:25 , Normal] -> 水平轴向归零成功 
+ [2019/9/6 17:51:25 , Normal] -> 所有坐标清零成功 
+ [2019/9/6 17:53:15 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:53:15 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:53:15 , Normal] -> 所有垂直轴向归零成功 
+ [2019/9/6 17:53:16 , Normal] -> 水平轴向归零成功 
+ [2019/9/6 17:53:16 , Normal] -> 所有坐标清零成功 
+ [2019/9/6 17:57:24 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:57:24 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:57:24 , Normal] -> 所有垂直轴向归零成功 
+ [2019/9/6 17:57:27 , Normal] -> 水平轴向归零成功 
+ [2019/9/6 17:57:27 , Normal] -> 所有坐标清零成功 
+ [2019/9/6 17:57:46 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 17:57:46 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 17:57:46 , Normal] -> 所有垂直轴向归零成功 
+ [2019/9/6 17:57:47 , Normal] -> 水平轴向归零成功 
+ [2019/9/6 17:57:47 , Normal] -> 所有坐标清零成功 
+ [2019/9/6 18:01:23 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 18:01:23 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 18:01:23 , Normal] -> 所有垂直轴向归零成功 
+ [2019/9/6 18:01:27 , Normal] -> 水平轴向归零成功 
+ [2019/9/6 18:01:27 , Normal] -> 所有坐标清零成功 
+ [2019/9/6 18:04:01 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 连接错误!请检查连接
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 C:\Users\ASUS\Desktop\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 183 
+ [2019/9/6 18:04:11 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/9/6 18:04:11 , Normal] -> 设置轴向归零参数 
+ [2019/9/6 18:04:11 , Normal] -> 所有垂直轴向归零成功 
+ [2019/9/6 18:04:12 , Normal] -> 水平轴向归零成功 
+ [2019/9/6 18:04:12 , Normal] -> 所有坐标清零成功 
+ 
