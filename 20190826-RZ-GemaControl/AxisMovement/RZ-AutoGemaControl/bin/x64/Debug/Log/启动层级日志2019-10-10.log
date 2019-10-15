@@ -1,0 +1,63 @@
+[2019/10/10 9:54:07 , Normal] ->  
+ [2019/10/10 9:54:26 , Normal] ->  
+ [2019/10/10 9:59:48 , Normal] ->  
+ [2019/10/10 10:04:34 , Normal] ->  
+ [2019/10/10 10:05:43 , Normal] ->  
+ [2019/10/10 10:06:01 , Normal] ->  
+ [2019/10/10 10:07:33 , Normal] ->  
+ [2019/10/10 10:09:45 , Normal] ->  
+ [2019/10/10 10:13:11 , Normal] ->  
+ [2019/10/10 10:16:25 , Normal] ->  
+ [2019/10/10 10:18:32 , Normal] ->  
+ [2019/10/10 10:21:11 , Normal] ->  
+ [2019/10/10 10:22:29 , Normal] ->  
+ [2019/10/10 10:24:31 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RZ_AutoGemaControl.GameConsole.button2_Click_2(Object sender, EventArgs e) 位置 F:\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 387
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 353
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 74 
+ [2019/10/10 10:36:20 , Normal] ->  
+ [2019/10/10 10:39:24 , Normal] ->  
+ [2019/10/10 10:42:22 , Normal] ->  
+ [2019/10/10 10:45:05 , Normal] ->  
+ [2019/10/10 13:25:49 , Normal] ->  
+ [2019/10/10 13:46:10 , Normal] ->  
+ [2019/10/10 13:47:26 , Normal] ->  
+ [2019/10/10 13:51:23 , Normal] ->  
+ [2019/10/10 13:52:35 , Normal] ->  
+ [2019/10/10 13:56:03 , Normal] ->  
+ [2019/10/10 13:58:57 , Normal] ->  
+ [2019/10/10 13:59:10 , Normal] ->  
+ [2019/10/10 13:59:31 , Normal] ->  
+ [2019/10/10 13:59:57 , Normal] ->  
+ [2019/10/10 14:00:20 , Normal] ->  
+ [2019/10/10 14:00:40 , Normal] ->  
+ [2019/10/10 14:04:18 , Normal] ->  
+ [2019/10/10 14:20:41 , Normal] ->  
+ [2019/10/10 14:21:50 , Normal] ->  
+ [2019/10/10 14:24:42 , Normal] ->  
+ [2019/10/10 14:27:56 , Normal] ->  
+ [2019/10/10 14:30:53 , Normal] ->  
+ [2019/10/10 14:31:09 , Normal] ->  
+ [2019/10/10 14:39:40 , Normal] ->  
+ [2019/10/10 14:40:22 , Normal] ->  
+ [2019/10/10 14:41:22 , Normal] ->  
+ [2019/10/10 14:41:43 , Normal] ->  
+ [2019/10/10 14:56:18 , Normal] ->  
+ [2019/10/10 15:25:35 , Normal] ->  
+ [2019/10/10 15:26:02 , Normal] ->  
+ [2019/10/10 15:26:33 , Normal] ->  
+ [2019/10/10 15:28:01 , Normal] ->  
+ 

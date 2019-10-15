@@ -1,0 +1,1870 @@
+[2019/10/10 9:54:15 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 错误信息:错误Cannot_be_connected : 无法连接
+, 错误编码:8 , 错误函数:LinkDevice, 错误轴向:总控制
+   在 Device_Link_LTSMC.Device_Net_LSTMC.CallBack(String optionFunction, Int16[] erroCodes)
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 185 
+ [2019/10/10 9:54:15 , Normal] -> 启动服务器成功 
+ [2019/10/10 9:54:15 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 9:54:21 , Waring] -> 读取坐标信息异常 
+ [2019/10/10 9:54:21 , Erro] -> System.InvalidOperationException: 在创建窗口句柄之前，不能在控件上调用 Invoke 或 BeginInvoke。
+   在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   在 RZ_AutoGemaControl.GameConsole.<>c__DisplayClass44_0.<GetCoordinates>b__0() 
+ [2019/10/10 9:54:29 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 9:54:29 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 9:54:29 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 9:54:30 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 9:54:30 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 9:54:30 , Normal] -> 启动服务器成功 
+ [2019/10/10 9:54:30 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 9:59:49 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 9:59:49 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 9:59:50 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 9:59:50 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 9:59:50 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 9:59:50 , Normal] -> 启动服务器成功 
+ [2019/10/10 9:59:50 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 9:59:58 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 9:59:59 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:07 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:07 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:28 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:28 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:29 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:29 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:38 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:38 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:39 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:39 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:40 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:40 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:41 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:41 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:42 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:42 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:42 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:42 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:43 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:00:44 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:00:44 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:04:36 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:04:36 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:04:36 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:04:37 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:04:37 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:04:37 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:04:37 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:05:50 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 错误信息:错误Cannot_be_connected : 无法连接
+, 错误编码:8 , 错误函数:LinkDevice, 错误轴向:总控制
+   在 Device_Link_LTSMC.Device_Net_LSTMC.CallBack(String optionFunction, Int16[] erroCodes)
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 185 
+ [2019/10/10 10:05:50 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:05:50 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:06:03 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:06:03 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:06:03 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:06:05 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:06:05 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:06:05 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:06:05 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:07:34 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:07:34 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:07:34 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:07:35 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:07:35 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:07:35 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:07:35 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:09:59 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:09:59 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:09:59 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:10:01 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:10:01 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:10:01 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:10:01 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:13:29 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:13:29 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:13:29 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:13:30 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:13:30 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:13:30 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:13:30 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:16:26 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:16:27 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:16:27 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:16:28 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:16:28 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:16:28 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:16:28 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:18:34 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:18:34 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:18:34 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:18:35 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:18:35 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:18:35 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:18:35 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:21:13 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:21:13 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:21:13 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:21:14 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:21:14 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:21:14 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:21:14 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:22:30 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:22:30 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:22:30 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:22:31 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:22:31 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:22:31 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:22:31 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:23:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:28 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:28 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:29 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:29 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:34 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:23:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:23:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:06 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:06 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:24:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:24:31 , Waring] -> 读取坐标信息异常 
+ [2019/10/10 10:36:22 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:36:22 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:36:22 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:36:24 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:36:24 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:36:24 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:36:24 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:37:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:37:47 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:37:48 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:37:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:37:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:37:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:37:50 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:37:50 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:39:27 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:39:28 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:39:28 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:39:30 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:39:30 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:39:30 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:39:30 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:39:53 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:39:53 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:39:54 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:39:54 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:39:55 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:39:55 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:24 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:42:24 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:42:25 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:42:27 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:42:27 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:42:27 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:42:27 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 10:42:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:34 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:34 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:38 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:38 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:38 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:38 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:38 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:38 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:40 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:40 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:40 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:40 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:41 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:41 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:42 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:42 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:43 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:43 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:44 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:44 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:44 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:44 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:45 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:45 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:46 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:46 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:46 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:46 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:47 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:48 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:50 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:50 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:42:51 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 10:42:51 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 10:45:07 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 10:45:07 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 10:45:07 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 10:45:08 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 10:45:08 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 10:45:08 , Normal] -> 启动服务器成功 
+ [2019/10/10 10:45:08 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 13:23:49 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 13:23:49 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 13:23:49 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 13:23:50 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 13:23:50 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 13:23:50 , Normal] -> 启动服务器成功 
+ [2019/10/10 13:23:50 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 13:25:51 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 13:25:51 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 13:25:51 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 13:25:51 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 13:25:51 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 13:25:51 , Normal] -> 启动服务器成功 
+ [2019/10/10 13:25:51 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 13:46:12 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 13:46:12 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 13:46:12 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 13:46:14 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 13:46:14 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 13:46:14 , Normal] -> 启动服务器成功 
+ [2019/10/10 13:46:14 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 13:47:28 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 13:47:28 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 13:47:28 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 13:47:28 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 13:47:28 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 13:47:28 , Normal] -> 启动服务器成功 
+ [2019/10/10 13:47:28 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 13:51:25 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 13:51:25 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 13:51:25 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 13:51:27 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 13:51:27 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 13:51:27 , Normal] -> 启动服务器成功 
+ [2019/10/10 13:51:27 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 13:51:36 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 13:51:36 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 13:51:37 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 13:51:38 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 13:51:38 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 13:51:38 , Normal] -> 启动服务器成功 
+ [2019/10/10 13:51:38 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 13:52:37 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 13:52:37 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 13:52:37 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 13:52:37 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 13:52:37 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 13:52:37 , Normal] -> 启动服务器成功 
+ [2019/10/10 13:52:38 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 13:56:05 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 13:56:05 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 13:56:05 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 13:56:05 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 13:56:05 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 13:56:05 , Normal] -> 启动服务器成功 
+ [2019/10/10 13:56:05 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:00:25 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:00:25 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:00:25 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:00:26 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:00:27 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:00:27 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:00:27 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:00:42 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:00:42 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:00:42 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:00:42 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:00:42 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:00:42 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:00:42 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:04:39 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:04:39 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:04:39 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:04:41 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:04:41 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:04:41 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:04:41 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:21:52 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:21:52 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:21:52 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:21:53 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:21:53 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:21:53 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:21:53 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:21:56 , Normal] -> 正在移动{0}轴X 
+ [2019/10/10 14:21:56 , Normal] -> 正在移动{0}轴Y 
+ [2019/10/10 14:22:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:22:28 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:22:28 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:24:44 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:24:44 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:24:44 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:24:47 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:24:47 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:24:47 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:24:47 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:24:55 , Normal] -> 正在移动{0}轴X 
+ [2019/10/10 14:24:55 , Normal] -> 正在移动{0}轴Y 
+ [2019/10/10 14:27:58 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:27:58 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:27:58 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:28:00 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:28:00 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:28:00 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:28:00 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:28:02 , Normal] -> 正在移动{0}轴X 
+ [2019/10/10 14:28:02 , Normal] -> 正在移动{0}轴Y 
+ [2019/10/10 14:30:54 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:30:54 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:30:55 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:30:56 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:30:56 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:30:56 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:30:56 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:31:10 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:31:10 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:31:11 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:31:11 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:31:11 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:31:11 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:31:11 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:31:12 , Normal] -> 正在移动{0}轴X 
+ [2019/10/10 14:31:12 , Normal] -> 正在移动{0}轴Y 
+ [2019/10/10 14:31:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:31:43 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:31:45 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:31:45 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:31:45 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:31:45 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:31:52 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:31:52 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:04 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:04 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:04 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:04 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:05 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:05 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:05 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:05 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:06 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:06 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:06 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:06 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:07 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:07 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:07 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:07 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:29 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:29 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:34 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:34 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:34 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:38 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:38 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:38 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:38 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:39 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:39 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:40 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:40 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:42 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:42 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:42 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:42 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:43 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:51 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:51 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:56 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:56 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:56 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:56 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:58 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:58 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:58 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:58 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:58 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:58 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:59 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:59 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:32:59 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:32:59 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:00 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:00 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:00 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:00 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:01 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:01 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:01 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:01 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:01 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:01 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:02 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:02 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:02 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:02 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:03 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:03 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:04 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:04 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:05 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:05 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:05 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:05 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:06 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:06 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:07 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:07 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:07 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:07 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:33:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:33:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:01 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:01 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:02 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:02 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:03 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:03 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:03 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:03 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:04 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:04 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:04 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:04 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:05 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:05 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:06 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:06 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:28 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:28 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:28 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:28 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:29 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:29 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:29 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:29 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:29 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:29 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:34 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:34 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:38 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:38 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:38 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:38 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:39 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:39 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:39 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:39 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:40 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:40 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:40 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:40 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:40 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:40 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:41 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:41 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:41 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:41 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:42 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:42 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:42 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:42 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:43 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:43 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:44 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:44 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:44 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:45 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:45 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:45 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:45 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:45 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:45 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:46 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:46 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:46 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:46 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:47 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:47 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:48 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:48 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:48 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:50 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:50 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:55 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:55 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:55 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:55 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:56 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:56 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:56 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:56 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:58 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:58 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:58 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:58 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:59 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:59 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:34:59 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:34:59 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:00 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:00 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:01 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:01 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:02 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:02 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:02 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:02 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:03 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:03 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:03 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:03 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:03 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:04 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:04 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:04 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:05 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:05 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:05 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:05 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:05 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:05 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:06 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:06 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:06 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:06 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:07 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:07 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:07 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:07 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:35:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:35:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:38:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:38:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:38:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:38:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:28 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:38:29 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:38:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:38:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:38:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:38:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:38:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:38:53 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:03 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:09 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:39:09 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:39:10 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:39:13 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:39:13 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:39:13 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:39:13 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:39:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:41 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:39:41 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:39:41 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:39:43 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:39:43 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:39:43 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:39:43 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:39:46 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:46 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:50 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:50 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:51 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:51 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:39:51 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:39:51 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:40:01 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:40:01 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:40:24 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:40:24 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:40:24 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:40:27 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:40:27 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:40:27 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:40:27 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:40:30 , Normal] -> 正在移动{0}轴X 
+ [2019/10/10 14:40:30 , Normal] -> 正在移动{0}轴Y 
+ [2019/10/10 14:41:24 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:41:24 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:41:25 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:41:45 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:41:45 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:41:45 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:41:46 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:41:46 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:41:46 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:41:46 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 14:41:57 , Normal] -> 正在移动{0}轴X 
+ [2019/10/10 14:41:57 , Normal] -> 正在移动{0}轴Y 
+ [2019/10/10 14:42:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:42:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:42:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 14:42:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 14:56:43 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 14:56:43 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 14:56:44 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 14:56:46 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 14:56:46 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 14:56:46 , Normal] -> 启动服务器成功 
+ [2019/10/10 14:56:47 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 15:08:44 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:08:44 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:08:46 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:08:46 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:08:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:08:47 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:08:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:08:47 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:08:48 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:08:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:08:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:08:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:08:50 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:08:50 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:08:51 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:08:51 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:06 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:06 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:07 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:07 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:28 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:28 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:28 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:28 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:29 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:29 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:34 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:34 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:41 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:41 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:41 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:41 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:42 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:42 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:43 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:43 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:44 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:44 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:45 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:45 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:46 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:46 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:47 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:47 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:48 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:48 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:50 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:50 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:50 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:50 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:51 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:51 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:51 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:51 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:52 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:52 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:53 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:53 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:53 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:53 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:54 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:54 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:54 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:54 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:55 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:55 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:55 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:55 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:56 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:56 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:58 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:58 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:58 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:58 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:09:59 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:09:59 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:02 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:02 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:15 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:15 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:16 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:16 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:27 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:27 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:29 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:29 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:29 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:29 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:30 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:30 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:31 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:31 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:32 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:32 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:34 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:35 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:35 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:38 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:38 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:38 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:38 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:39 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:39 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:39 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:39 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:40 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:40 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:40 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:40 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:41 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:41 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:41 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:41 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:42 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:42 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:42 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:42 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:44 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:44 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:44 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:51 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:52 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:53 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:53 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:10:54 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:10:54 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:25:42 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 错误信息:错误Cannot_be_connected : 无法连接
+, 错误编码:8 , 错误函数:LinkDevice, 错误轴向:总控制
+   在 Device_Link_LTSMC.Device_Net_LSTMC.CallBack(String optionFunction, Int16[] erroCodes)
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 185 
+ [2019/10/10 15:25:42 , Normal] -> 启动服务器成功 
+ [2019/10/10 15:25:42 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 15:26:10 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 错误信息:错误Cannot_be_connected : 无法连接
+, 错误编码:8 , 错误函数:LinkDevice, 错误轴向:总控制
+   在 Device_Link_LTSMC.Device_Net_LSTMC.CallBack(String optionFunction, Int16[] erroCodes)
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 185 
+ [2019/10/10 15:26:10 , Normal] -> 启动服务器成功 
+ [2019/10/10 15:26:10 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 15:26:34 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 15:26:34 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 15:26:35 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 15:26:37 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 15:26:37 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 15:26:37 , Normal] -> 启动服务器成功 
+ [2019/10/10 15:26:38 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 15:26:41 , Normal] -> 正在移动{0}轴X 
+ [2019/10/10 15:26:41 , Normal] -> 正在移动{0}轴Y 
+ [2019/10/10 15:26:43 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:43 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:45 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:45 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:46 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:46 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:46 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:46 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:47 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:47 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:47 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:48 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:50 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:50 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:50 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:50 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:50 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:50 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:51 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:51 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:51 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:51 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:52 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:52 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:52 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:52 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:53 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:53 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:53 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:53 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:53 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:53 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:54 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:54 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:54 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:54 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:55 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:55 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:55 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:55 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:56 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:56 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:57 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:57 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:58 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:58 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:59 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:59 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:26:59 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:26:59 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:00 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:00 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:00 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:00 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:01 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:01 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:01 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:01 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:02 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:02 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:02 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:02 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:03 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:03 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:04 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:04 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:04 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:04 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:05 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:05 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:06 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:06 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:06 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:06 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:07 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:07 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:07 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:07 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:08 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:08 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:09 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:09 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:10 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:10 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:11 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:11 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:12 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:12 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:13 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:13 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:14 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:27:14 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:27:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:28:02 , Normal] -> 开始回零操作，停止任何操作！ 
+ [2019/10/10 15:28:02 , Normal] -> 设置轴向归零参数 
+ [2019/10/10 15:28:03 , Normal] -> 所有垂直轴向归零成功 
+ [2019/10/10 15:28:05 , Normal] -> 水平轴向归零成功 
+ [2019/10/10 15:28:05 , Normal] -> 所有坐标清零成功 
+ [2019/10/10 15:28:05 , Normal] -> 启动服务器成功 
+ [2019/10/10 15:28:05 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ [2019/10/10 15:28:09 , Normal] -> 正在移动{0}轴X 
+ [2019/10/10 15:28:09 , Normal] -> 正在移动{0}轴Y 
+ [2019/10/10 15:28:33 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:28:33 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:28:36 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:28:36 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:28:37 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:28:37 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:28:48 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:28:48 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:28:49 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:28:49 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:04 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:04 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:17 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:17 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:18 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:18 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:19 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:19 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:20 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:20 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:21 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:21 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:22 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:22 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:23 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:23 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:24 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:24 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:25 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:25 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:29:26 , Normal] -> 正在移动{0}轴U 
+ [2019/10/10 15:29:26 , Normal] -> 正在移动{0}轴V 
+ [2019/10/10 15:41:30 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 错误信息:错误Cannot_be_connected : 无法连接
+, 错误编码:8 , 错误函数:LinkDevice, 错误轴向:总控制
+   在 Device_Link_LTSMC.Device_Net_LSTMC.CallBack(String optionFunction, Int16[] erroCodes)
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 185 
+ [2019/10/10 15:41:30 , Normal] -> 启动服务器成功 
+ [2019/10/10 15:41:30 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 193 
+ 

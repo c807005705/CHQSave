@@ -108,14 +108,15 @@ namespace RZ_AutoGemaControl
                     W = ConDevice.GetAxisPosition(Axis.W);
                     try
                     {
-                        PointXY.X = Convert.ToInt32(X / (5000 / 25));
                         PointXY.Y = Convert.ToInt32(Y / (5000 / 16));
-                        PointZ.X = Convert.ToInt32(Z / (5000 / 7));
+                        PointXY.X = Convert.ToInt32(X );
+                        PointXY.Y = Convert.ToInt32(Y);
+                        PointZ.X = Convert.ToInt32(Z );
                         movePosition.BeginInvoke(new Action(() =>
-                           movePosition.Text = string.Format("X:{0},Y:{1},Z:{2}", PointXY, PointXY.Y, PointZ.X)));
-                        PointUV.X = Convert.ToInt32(U / (5000 / 25));
-                        PointUV.Y = Convert.ToInt32(V / (5000 / 16));
-                        PointW.X = Convert.ToInt32(W / (5000 / 7));
+                           movePosition.Text = string.Format("X:{0},Y:{1},Z:{2}", PointXY.X, PointXY.Y, PointZ.X)));
+                        PointUV.X = Convert.ToInt32(U);
+                        PointUV.Y = Convert.ToInt32(V );
+                        PointW.X = Convert.ToInt32(W );
                         killPosition.BeginInvoke(new Action(() =>
                                killPosition.Text = string.Format("X:{0},Y:{1},Z:{2}", PointUV.X, PointUV.Y, PointW.X)));
                         SpeedDisplay.BeginInvoke(new Action(() =>
@@ -265,7 +266,7 @@ namespace RZ_AutoGemaControl
                                 ConDevice.MoveAxis(Axis.Y, -PointXY.Y * (5000 / 16), true, Direction.Back);
                             break;
                         case "MoveForward"://后Y
-                            if (PointXY.Y + Convert.ToInt32(XPosition.Text) <= 200)
+                            if (PointXY.Y + Convert.ToInt32(SpeedDisplay.Text) <= 200)
                                 ConDevice.MoveAxis(Axis.Y, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 16)), true, Direction.Forward);
                             else
                                 MessageBox.Show("超过可移动范围");
@@ -277,7 +278,7 @@ namespace RZ_AutoGemaControl
                                 ConDevice.MoveAxis(Axis.X, -PointXY.X * (5000 / 25), true, Direction.Back);
                             break;
                         case "MoveRight"://右X
-                            if (PointXY.X + Convert.ToInt32(XPosition.Text) <= 100)
+                            if (PointXY.X + Convert.ToInt32(SpeedDisplay.Text) <= 100)
                                 ConDevice.MoveAxis(Axis.X, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 25)), true, Direction.Forward);
                             else
                                 MessageBox.Show("超过可移动范围");
@@ -405,12 +406,12 @@ namespace RZ_AutoGemaControl
                 if (Keys.A == e.KeyCode || Keys.D == e.KeyCode)
                 {
                     //ConDevice.stopAxis(Axis.X);
-                    MessageBox.Show("a||d");
+                    //MessageBox.Show("a||d");
                 }
                 else if (Keys.S == e.KeyCode || Keys.W == e.KeyCode)
                 {
                    // ConDevice.stopAxis(Axis.Y);
-                    MessageBox.Show("s||w");
+                   // MessageBox.Show("s||w");
                 }
             }
             catch(Exception ex)
@@ -429,121 +430,105 @@ namespace RZ_AutoGemaControl
 
             try
             {
-                if (Keys.A == e.KeyCode)
-                {
-                    //if (ConDevice.GetAxisPosition(Axis.X) == 0)
-                    //return;
-                    // else
-                    // ConDevice.ContinuousMotion(Axis.X, Direction.Forward);
-                    // MessageBox.Show("A");
+                if (Keys.D == e.KeyCode)
+                {                 
+                   
+                   
                     if (IsCenter)
                     {
-
-                        ConDevice.PreHeight(Axis.W, 12);
+                       // ConDevice.PreHeight(Axis.Z, 12);
+                        ConDevice.PreHeight(Axis.Z, 6);
                         IsCenter = false;
                     }
-                    action.DirMove(270);
-                }
-                else if (Keys.D == e.KeyCode)
-                {
-                    // ConDevice.ContinuousMotion(Axis.X, Direction.Back);
-                    //MessageBox.Show("D");
-                    if (IsCenter)
-                    {
-
-                        ConDevice.PreHeight(Axis.W, 12);
-                        IsCenter = false;
-                    }
-                    action.DirMove(90);
+                    ConDevice.DirMove(330);
                 }
                 else if (Keys.W == e.KeyCode)
-                {
-                    //ConDevice.ContinuousMotion(Axis.Y, Direction.Forward);
-                    //MessageBox.Show("W");
+                {                   
+                   
+                    
                     if (IsCenter)
                     {
-
-                        ConDevice.PreHeight(Axis.W, 12);
+                       // ConDevice.PreHeight(Axis.Z, 12);
+                        ConDevice.PreHeight(Axis.Z, 6);
                         IsCenter = false;
                     }
-                    action.DirMove(0);
+                    ConDevice.DirMove(40);
+                }
+                else if (Keys.A == e.KeyCode)
+                {                  
+                   
+                   
+                    if (IsCenter)
+                    {
+                        //ConDevice.PreHeight(Axis.Z, 12);
+                        ConDevice.PreHeight(Axis.Z, 6);
+                        IsCenter = false;
+                    }
+                    ConDevice.DirMove(150);
                 }
                 else if (Keys.S == e.KeyCode)
                 {
-                    //if (ConDevice.GetAxisPosition(Axis.Y) == 0)
-                    // return;
-                    // else
-                    //ConDevice.ContinuousMotion(Axis.Y, Direction.Back);
-                    //MessageBox.Show("S");
+                   
+                   
                     if (IsCenter)
                     {
-
-                        ConDevice.PreHeight(Axis.W, 12);
+                        //ConDevice.PreHeight(Axis.Z, 12);
+                        ConDevice.PreHeight(Axis.Z, 6);
                         IsCenter = false;
                     }
-                    action.DirMove(180);
+                    ConDevice.DirMove(240);
                 }
                 switch (e.KeyCode)
                 {
-                    //case Keys.A:
-                    //    if (XPosition == 0)
-                    //        return;
-                    //    else
-                    //        ConDevice.ContinuousMotion(Axis.X, Direction.Forward);
-                    //    //MessageBox.Show("A");
-                    //    break;
-                    //case Keys.D:
-                    //    ConDevice.ContinuousMotion(Axis.X, Direction.Back);
-                    //    //MessageBox.Show("D");
-                    //    break;
-                    //case Keys.W:
-                    //    ConDevice.ContinuousMotion(Axis.Y, Direction.Forward);
-                    //    //MessageBox.Show("W");
-                    //    break;
-                    //case Keys.S:
-                    //    if (YPosition == 0)
-                    //        return;
-                    //    else
-                    //        ConDevice.ContinuousMotion(Axis.Y, Direction.Back);
-                    //    //MessageBox.Show("S");
-                    //    break;
+                   
                     case Keys.K:
-                        ConDevice.MoveToPositionUV(50,50);
+                        ConDevice.MoveToPositionUV(61,143);
+                       
                         if (isClick)
                         {
                             
                             ConDevice.PreHeight(Axis.W, 12);
+                            
                             isClick = false;
-                        }
+                        } 
                         ConDevice.SkillClick(40000, 9);
+
 
                         break;
                     case Keys.J:
-                        ConDevice.MoveToPositionUV(60, 60);
+                        ConDevice.MoveToPositionUV(83, 145);
                         ConDevice.SkillClick(40000, 9);
                         break;
                     case Keys.I:
-                        ConDevice.MoveToPositionUV(70, 70);
+                        ConDevice.MoveToPositionUV(75, 133);
                         ConDevice.SkillClick(40000, 9);
                         break;
                     case Keys.O:
-                        ConDevice.MoveToPositionUV(80, 80);
+                        ConDevice.MoveToPositionUV(61, 123);
                         ConDevice.SkillClick(40000, 9);
                         break;
                     case Keys.B:
-                        ConDevice.MoveToPositionUV(90, 90);
+                        ConDevice.MoveToPositionUV(90, 136);
                         ConDevice.SkillClick(40000, 9);
                         break;
                     case Keys.H:
-                        ConDevice.MoveToPositionUV(100, 100);
+                        ConDevice.MoveToPositionUV(83, 123);
                         ConDevice.SkillClick(40000, 9);
                         break;
                     case Keys.U:
-                        ConDevice.MoveToPositionUV(100, 100);
+                        ConDevice.MoveToPositionUV(70, 115);
                         ConDevice.SkillClick(40000, 9);
                         break;
                     case Keys.Space:
-                       // ConDevice.PreHeight(Axis.W, 12);
+                        ConDevice.MoveToPositionXY(70, 124);
+                        ConDevice.AxisMoveTo(Axis.Z, -12);
+                        IsCenter = true;
+                        break;
+                    case Keys.Q:
+                        ConDevice.AxisMoveTo(Axis.Z, -12);
+                        ConDevice.MoveToPositionXY(59, 140);
+                        ConDevice.MoveClick(40000,9);
+                        IsCenter = true;
                         break;
                 }              
             }
