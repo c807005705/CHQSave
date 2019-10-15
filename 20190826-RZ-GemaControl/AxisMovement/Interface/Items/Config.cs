@@ -6,6 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Device_Link_LTSMC;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Bson;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Interface.Items
 {
@@ -24,11 +28,18 @@ namespace Interface.Items
         /// 圆半径
         /// </summary>
         private double circleRadius = 10;
+      
         /// <summary>
         /// 轮盘坐标
         /// </summary>
-        private Point RoulettePosition = new Point();
-
+        public Point RoulettePosition = new Point();
+        public Point FlatA=new Point();
+        public Point Skill_1 = new Point();
+        public Point Skill_2 = new Point();
+        public Point Slill_3 = new Point();
+        public Point SkillPlus_1 = new Point();
+        public Point SkillPlus_2 = new Point();
+        public Point SkillPlus_3 = new Point();
         /// <summary>
         /// 相机拍摄区域
         /// </summary>
@@ -118,6 +129,29 @@ namespace Interface.Items
              
             }
         }
+        /// <summary>
+        /// 读取配置文件
+        /// </summary>
+        /// <param name="configPath"></param>
+        /// <returns></returns>
+        public static Config ReadConfigFromFile(string configPath)
+        {
+            if (!File.Exists(configPath)) return null;
+            JsonSerializerSettings setting = new JsonSerializerSettings();
+            setting.TypeNameHandling = TypeNameHandling.All;
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<Config>(System.Text.Encoding.UTF8.GetString(File.ReadAllBytes(configPath)), setting);
+        }
+        /// <summary>
+        /// 保存配置文件
+        /// </summary>
+        /// <param name="configPath"></param>
+        /// <param name="deviceConfig"></param>
+        public static void SaveDeviceConfigToFile(string configPath, Config deviceConfig)
+        {
+            JsonSerializerSettings setting = new JsonSerializerSettings();
+            setting.TypeNameHandling = TypeNameHandling.All;
+            File.WriteAllBytes(configPath, System.Text.Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(deviceConfig, setting)));
+        }
 
     }
     /// <summary>
@@ -131,35 +165,35 @@ namespace Interface.Items
         public Dictionary<Axis, AxisInfo> AxisOtherInfo = new Dictionary<Axis, AxisInfo>()
            {
                 { Config.MovingXAxis,new AxisInfo() {
-                    Direction =Direction.Back, ZeroSpeed = 10000.00,AccTime = 0.01, ZeroMode=ZeroMode.OTTZ,
-                    DecTime =0.01,RunSpeed = 60000, Name = "方向轴X移动",Scale = 207725 / 81 }
+                    Direction =Direction.Back, ZeroSpeed = 40000.00,AccTime = 0.01, ZeroMode=ZeroMode.OTTZ,
+                    DecTime =0.01,RunSpeed = 40000, Name = "方向轴X移动",Scale = 5000 / 25 }
                 },
                 {
                    Config.MovingYAxis,new AxisInfo(){
-                    Direction =Direction.Back,ZeroSpeed=10000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
-                    DecTime =0.01, RunSpeed=60000,Name="方向轴Y移动",Scale=207725/81}
+                    Direction =Direction.Back,ZeroSpeed=40000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
+                    DecTime =0.01, RunSpeed=40000,Name="方向轴Y移动",Scale= 5000 / 16}
                 },
                 {
                     Config.MovingZAxis,new AxisInfo(){
-                        Direction =Direction.Back,ZeroSpeed=10000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
-                        DecTime =0.01,RunSpeed=10000.00,Name="方向轴Z移动",Scale=207725/81}
+                        Direction =Direction.Forward,ZeroSpeed=50000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
+                        DecTime =0.01,RunSpeed=50000.00,Name="方向轴Z移动",Scale= 5000 / 7}
                 },
                 {
                     Config.SkillReleaseUAxis,new AxisInfo()  {
-                        Direction=Direction.Forward,ZeroSpeed=10000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
-                        DecTime =0.01,RunSpeed=10000.0,Name="技能释放轴U移动",Scale=207725/81
+                        Direction=Direction.Back,ZeroSpeed=40000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
+                        DecTime =0.01,RunSpeed=40000.0,Name="技能释放轴U移动",Scale= 5000 / 25
                     }
                 },
                 {
                     Config.SkillReleaseVAxis,new AxisInfo(){
-                        Direction=Direction.Forward,ZeroSpeed=10000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
-                        DecTime=0.01,RunSpeed=10000.0,Name ="技能释放V轴",Scale=207725/81
+                        Direction=Direction.Back,ZeroSpeed=40000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
+                        DecTime=0.01,RunSpeed=40000.0,Name ="技能释放V轴",Scale= 5000 / 16
                     }
                 },
                 {
                     Config.SkillReleaseWAxis,new AxisInfo(){
-                        Direction=Direction.Forward,ZeroSpeed=10000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
-                        DecTime=0.01,RunSpeed=10000.0,Name ="技能释放W轴",Scale=207725/81
+                        Direction=Direction.Forward,ZeroSpeed=50000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
+                        DecTime=0.01,RunSpeed=50000.0,Name ="技能释放W轴",Scale= 5000 / 7
                     }
 
                  }

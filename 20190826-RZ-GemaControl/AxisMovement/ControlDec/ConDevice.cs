@@ -592,6 +592,15 @@ namespace ControlDec
             lTSMC[axis].SetRunDistanceSync(-height * (5000 / 7));
         }
 
+        public void stopAxis(Axis axis)
+        {
+            lTSMC[axis].Stop();
+        }
+
+        public void ContinuousMotion(Axis axis, Direction direction)
+        {
+            lTSMC[axis].SetAlwaysRunning(direction);
+        }
     }
 }
 

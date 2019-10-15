@@ -145,6 +145,8 @@ namespace Interface.Interface
         double AxisSpeed(Axis axis, double speed);
 
         void PreHeight(Axis axis, int height);
+        void stopAxis(Axis axis);
+        void ContinuousMotion(Axis axis ,Direction direction);
 
     }
 }

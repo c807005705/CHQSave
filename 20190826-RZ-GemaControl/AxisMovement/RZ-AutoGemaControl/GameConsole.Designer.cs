@@ -349,7 +349,7 @@ namespace RZ_AutoGemaControl
             this.button3.Location = new System.Drawing.Point(709, 145);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(31, 23);
-            this.button3.TabIndex = 11;
+            this.button3.TabIndex = 0;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -473,7 +473,7 @@ namespace RZ_AutoGemaControl
             this.label7.Location = new System.Drawing.Point(9, 24);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 16);
-            this.label7.TabIndex = 21;
+            this.label7.TabIndex = 1;
             this.label7.Text = "方向轴";
             // 
             // button1
@@ -694,7 +694,7 @@ namespace RZ_AutoGemaControl
             this.ZPosition.Location = new System.Drawing.Point(38, 99);
             this.ZPosition.Name = "ZPosition";
             this.ZPosition.Size = new System.Drawing.Size(74, 26);
-            this.ZPosition.TabIndex = 13;
+            this.ZPosition.TabIndex = 4;
             this.ZPosition.Text = "50";
             // 
             // YPoistion
@@ -702,7 +702,7 @@ namespace RZ_AutoGemaControl
             this.YPoistion.Location = new System.Drawing.Point(38, 71);
             this.YPoistion.Name = "YPoistion";
             this.YPoistion.Size = new System.Drawing.Size(74, 26);
-            this.YPoistion.TabIndex = 12;
+            this.YPoistion.TabIndex = 3;
             this.YPoistion.Text = "50";
             // 
             // label2
@@ -756,7 +756,7 @@ namespace RZ_AutoGemaControl
             this.XPosition.Location = new System.Drawing.Point(38, 41);
             this.XPosition.Name = "XPosition";
             this.XPosition.Size = new System.Drawing.Size(74, 26);
-            this.XPosition.TabIndex = 4;
+            this.XPosition.TabIndex = 2;
             this.XPosition.Text = "50";
             // 
             // MoveUp
@@ -829,6 +829,10 @@ namespace RZ_AutoGemaControl
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "GameConsole";
             this.Text = "游戏控制台";
+            this.Load += new System.EventHandler(this.GameConsole_Load);
+            this.Click += new System.EventHandler(this.Movebackward_Click);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameConsole_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GameConsole_KeyUp);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);

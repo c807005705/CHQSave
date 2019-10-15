@@ -33,19 +33,11 @@ namespace ActInterface
         public Config config { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public void DirMove(double angle)
         {
-            if (angle >= 0 && angle <= 360)
-            {
-                double xPosition = ConDevice.GetAxisPosition(Axis.X);
-                double yPosition = ConDevice.GetAxisPosition(Axis.Y);
-                double xMovePosition = 68 + config.UserConfig.CircleRadius * (Math.Cos((Math.PI / 180) * angle));
-                double yMovePosition = 68 + config.UserConfig.CircleRadius * (Math.Sin((Math.PI / 180) * angle));
-                ConDevice.SetLineInterMove(2000, Convert.ToInt32(xMovePosition-xPosition), Convert.ToInt32(yMovePosition- yPosition));
-
-            }
-            else
-            { 
-            
-            }
+            double xPosition = ConDevice.GetAxisPosition(Axis.X);
+            double yPosition = ConDevice.GetAxisPosition(Axis.Y);
+            double xMovePosition = 68 + config.UserConfig.CircleRadius * (Math.Cos((Math.PI / 180) * (angle % 360)));
+            double yMovePosition = 68 + config.UserConfig.CircleRadius * (Math.Sin((Math.PI / 180) * (angle % 360)));
+            ConDevice.SetLineInterMove(2000, Convert.ToInt32(xMovePosition - xPosition), Convert.ToInt32(yMovePosition - yPosition));
         }
     
 

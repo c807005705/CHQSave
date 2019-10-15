@@ -1,0 +1,2661 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Device_Link_LTSMC</name>
+    </assembly>
+    <members>
+        <member name="T:Device_Link_LTSMC.Device_Net_LSTMC">
+            <summary>
+            设备操作
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Device_Net_LSTMC._connectNo">
+            <summary>
+            连接编号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Device_Net_LSTMC._targetIP">
+            <summary>
+            设备IP
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Device_Net_LSTMC._isLink">
+            <summary>
+            是否已经连接
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Device_Net_LSTMC._ltsmcAxiss">
+            <summary>
+            存放所有的轴向
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Device_Net_LSTMC._currentCrd">
+            <summary>
+            当前正在进行的插补坐标系
+            </summary>
+        </member>
+        <member name="E:Device_Link_LTSMC.Device_Net_LSTMC.ErroCallBack">
+            <summary>
+            错误回调函数
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.Device_Net_LSTMC.IsLink">
+            <summary>
+            是否已经连接
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.Device_Net_LSTMC.CurrentCrd">
+            <summary>
+            当前正在进行的插补坐标系
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.Device_Net_LSTMC.Item(Device_Link_LTSMC.Axis)">
+            <summary>
+            获取对应轴向的对象
+            </summary>
+            <param name="axis">轴向</param>
+            <returns>不存在则为null</returns>
+        </member>
+        <member name="P:Device_Link_LTSMC.Device_Net_LSTMC.IsAllReady">
+            <summary>
+            是否所有轴都已经就绪状态
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.Device_Net_LSTMC.IsAllNoWaring">
+            <summary>
+            是否所有轴都处于无告警状态
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.Device_Net_LSTMC.TargetIP">
+            <summary>
+            控制器IP
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.Checked">
+            <summary>
+            检测是否可以执行任务
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.#ctor(System.Collections.Generic.List{Device_Link_LTSMC.Axis})">
+            <summary>
+            添加一系列的轴向
+            </summary>
+            <param name="axisList">要控制的轴向列表</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice">
+            <summary>
+            连接设备
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.SetLineInter(Device_Link_LTSMC.LineInterData,System.UInt16)">
+            <summary>
+            直线插补
+            </summary>
+            <param name="data">数据（要插补的轴向和目标位置）</param>
+            <param name="crd"></param>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.SetDrawCircle(Device_Link_LTSMC.DrawCircleData)">
+            <summary>
+            画椭圆
+            </summary>
+            <param name="data">参数数据</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.SetClearAllAxisWaring">
+            <summary>
+            清除所有轴向的警告
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.ReadInPort(System.Int32)">
+            <summary>
+            读取输入端口的高低电平
+            </summary>
+            <param name="port">端口</param>
+            <returns>端口状态</returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.SetOutPort(System.Int32,Device_Link_LTSMC.PortSatte)">
+            <summary>
+            设置输出口的状态
+            </summary>
+            <param name="port">输出口</param>
+            <param name="state">状态</param>
+            <returns>是否成功操作</returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.AllToZero(System.Double,System.Double,System.Double,System.Double,System.UInt16)">
+            <summary>
+            所有轴向归零
+            </summary>
+            <param name="StartSpeed"></param>
+            <param name="RunSpeed"></param>
+            <param name="AccTime"></param>
+            <param name="DecTime"></param>
+            <param name="ToZeroDir">1正0负</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.AllToZero(Device_Link_LTSMC.ToZeroSpeed)">
+            <summary>
+            所有轴向归零
+            </summary>
+            <param name="speedData">回零的各轴向的速度数据</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.AllToZero(Device_Link_LTSMC.ToZeroParameter)">
+            <summary>
+            所有轴向归零
+            </summary>
+            <param name="parameter">参数</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.AllToClearPositionZero">
+            <summary>
+            所有轴向坐标清零
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.DecAndStopCrd(System.UInt16)">
+            <summary>
+            减速停止坐标系插补
+            </summary>
+            <param name="crd">要停止的坐标系（默认停止当前正在运行的或者前一次开启的坐标系）</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.StopLineInter">
+            <summary>
+            立即停止插补
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.ModifyAxissIsLink(System.Boolean)">
+            <summary>
+            修改每个轴向的状态
+            </summary>
+            <param name="state">状态</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.Close(System.Boolean)">
+            <summary>
+            关闭所有轴向(断开连接)
+            </summary>
+            <param name="isStop">是否断开连接前停止所有动作，true为是，false为不停止</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.StopAll">
+            <summary>
+            停止所有的轴
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.WriteConfigToDevice(System.Byte[],System.UInt16)">
+            <summary>
+            写入配置到设备空间
+            </summary>
+            <param name="datas">要写入的数据</param>
+            <param name="start">写入的起始位置默认为0</param>
+            <returns>是否写入成功</returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.ReadConfigByDevice(System.Byte[]@,System.UInt16)">
+            <summary>
+            从设备空间读取配置
+            </summary>
+            <param name="datas">数据存放的引用</param>
+            <param name="start">读取的起始位置默认为0</param>
+            <returns>是否读取成功</returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.Device_Net_LSTMC.CallBack(System.String,System.Int16[])">
+            <summary>
+            轴向错误委托
+            </summary>
+            <param name="optionFunction">出错的函数</param>
+            <param name="erroCodes">错误代码</param>
+        </member>
+        <member name="T:Device_Link_LTSMC.LTSMC">
+            <summary>
+            设备的sdk
+            </summary>
+        </member>
+        <member name="T:Device_Link_LTSMC.LTSMC_Axis">
+            <summary>
+            轴
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.LTSMC_Axis._connectNo">
+            <summary>
+            连接编号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.LTSMC_Axis._toZeroDir">
+            <summary>
+            回零方向
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.LTSMC_Axis._isAlmLogic">
+            <summary>
+            警告的状态(false 为低电平告警。 true为高电平告警)
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.LTSMC_Axis.ErroCallBack">
+            <summary>
+            错误回调函数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.LTSMC_Axis._trace">
+            <summary>
+            堆栈跟踪
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.CurrentMethodName">
+            <summary>
+            获取当前代码正在执行的函数名
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.StartSpeed">
+            <summary>
+            起始速度
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.RunSpeed">
+            <summary>
+            运行速度
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.AccTime">
+            <summary>
+            加速时间
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.DecTime">
+            <summary>
+            减速时间
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.STime">
+            <summary>
+            S段时间
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.TheAxis">
+            <summary>
+            本对象的轴向
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.IsLink">
+            <summary>
+            是否已经连接
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.StopSpeed">
+            <summary>
+            停止速度
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.RunDistance">
+            <summary>
+            运动距离
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.ZeroMode">
+            <summary>
+            回零模式
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.ZeroModeU">
+            <summary>
+            回零模式值
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.OffectMode">
+            <summary>
+            偏移模式
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.OffectModeU">
+            <summary>
+            偏移模式值
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.AxisU">
+            <summary>
+            轴向值
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.OffectDistance">
+            <summary>
+            偏移的距离
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.ToZeroDir">
+            <summary>
+            回零方向(1位正方向， 0为负方向)
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.IsAutoChange">
+            <summary>
+            自动切换任务
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LTSMC_Axis.IsWaring">
+            <summary>
+            检测是否有告警信号
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.#ctor">
+            <summary>
+            私有构造函数
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.#ctor(Device_Link_LTSMC.Axis,System.UInt16)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="axis">轴向</param>
+            <param name="_connectNo">连接号</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.Instance(Device_Link_LTSMC.Axis,System.UInt16)">
+            <summary>
+            获取该类实例
+            </summary>
+            <param name="axis">轴向</param>
+            <param name="_connectNo">连接号</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.CheckAxis">
+            <summary>
+            检查当前轴是否正在执行前一次的操作,如果是则抛出异常
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentSpeed">
+            <summary>
+            获取对应轴向的当前速度
+            </summary>
+            <returns>速度</returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentPosition">
+            <summary>
+            获取当前轴向的坐标
+            </summary>
+            <returns>坐标</returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.GetAxisCurrentState">
+            <summary>
+            获取当前轴向的状态 状态true为运动，false为停止
+            </summary>
+            <returns>状态true为运动，false为停止</returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetAxisSTime">
+            <summary>
+            设置当前轴向的S段时间
+            </summary>
+            <returns>状态true为运动，false为停止</returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetPulseMode">
+            <summary>
+            设置脉冲模式
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetAllSpeed">
+            <summary>
+            设置起始速度、运行速度、停止速度、加速时间、减速时间
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetRunDistance">
+            <summary>
+            设置运动距离
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.Run">
+            <summary>
+            设置所有的参数到设备并且按照参数运行
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetStartFindZeroParameters">
+            <summary>
+            启动回零
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetStartFindZeroParameters(System.Double,Device_Link_LTSMC.Direction)">
+            <summary>
+            启动回零
+            </summary>
+            <param name="speed">回零速度</param>
+            <param name="ToZeroDir">回零方向1为正0为反</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetAlmLogicALM(System.Boolean)">
+            <summary>
+            设置伺服警告的警告状态
+            </summary>
+            <param name="isHei">true为高有效false为低有效</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetInpMode(System.Boolean)">
+            <summary>
+            设置Inp信号
+            </summary>
+            <param name="isenabel"></param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.GetStopReason">
+            <summary>
+            获取停止原因
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetStartFindZeroParameters(System.Double,System.Double,System.Double,System.Double,Device_Link_LTSMC.Direction)">
+            <summary>
+            启动回零
+            </summary>
+            <param name="StartSpeed">起始速度</param>
+            <param name="RunSpeed">运行速度</param>
+            <param name="AccTime">加速时间</param>
+            <param name="DecTime">减速时间</param>
+            <param name="ToZeroDir">回零方向</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetStartFindZeroParametersAsync(Device_Link_LTSMC.ZeroParameterGroup)">
+            <summary>
+            异步回零
+            </summary>
+            <param name="zeroParameterGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetSingleAxisAnySpeedTask(Device_Link_LTSMC.SingleAxisAnySpeedTaskData)">
+            <summary>
+            设置单轴任意速度规划
+            </summary>
+            <param name="data">规划的参数数据</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetSingleAxisAnySpeedTask(System.Int32,System.Double[],System.Double[],System.Double[])">
+            <summary>
+            设置单轴任意速度规划
+            </summary>
+            <param name="length">长度</param>
+            <param name="timeArray">时间表</param>
+            <param name="postionArray">位置表</param>
+            <param name="velArray">速度表</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetAlwaysRunning(Device_Link_LTSMC.Direction)">
+            <summary>
+            设置连续运动
+            </summary>
+            <param name="dir">朝向</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetPulseEnable(System.Boolean)">
+            <summary>
+            设置当前轴的使能,true为高电平false为低电平(当前低电平为开，高电平为关)
+            </summary>
+            <param name="onOrOff">true为高电平false为低电平(当前低电平为开，高电平为关)</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetClearAxisWaring">
+            <summary>
+            清除当前轴向的伺服警告
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetEmergencyStopIOMap(Device_Link_LTSMC.PortSatte,System.UInt16)">
+            <summary>
+            设置急停IO映射
+            </summary>
+            <param name="state">高低状态（设置高为急停还是低位急停）</param>
+            <param name="intPort">映射到哪个口</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetEMGStopEnable(System.Boolean)">
+            <summary>
+            设置急停信号是否允许
+            </summary>
+            <param name="enable">是否使用</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.GetEmergencyStopPortSatte(System.UInt16)">
+            <summary>
+            获取当前信号的使用信号
+            </summary>
+            <param name="intPort">输入口</param>
+            <returns></returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetRunDistance(System.Double)">
+            <summary>
+            移动一定位移
+            </summary>
+            <param name="move">位移</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetRunDistanceAsync(System.Double)">
+            <summary>
+            异步运行move距离
+            </summary>
+            <param name="move">移动的距离</param>
+            <returns></returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetRunDistanceSync(System.Double)">
+            <summary>
+            同步移动等移动结束然后返回
+            </summary>
+            <param name="move"></param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.PositionZeroClear">
+            <summary>
+            位置清零
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.DecAndStop">
+            <summary>
+            减速停止
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetRunningChangeSpeed(System.Int32)">
+            <summary>
+            在运行中改变速度
+            </summary>
+            <param name="speed">要改变的速度（实际要进行改变的速度依旧获取runspeed的值）</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.Stop">
+            <summary>
+            立刻停止运动
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.SetRunningChangeRunTargetDistance(System.Int32)">
+            <summary>
+            在运行中改变运行的目标距离
+            </summary>
+            <param name="dis">要改变的目标距离（实际要进行改变的速度依旧获取RunDistance的值）</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.ReadAxisIOStutas">
+            <summary>
+            读取当前轴的特殊IO信号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LTSMC_Axis.CallBack(System.String,System.Int16[])">
+            <summary>
+            轴向错误委托
+            </summary>
+            <param name="optionFunction">出错的函数</param>
+            <param name="erroCodes">错误代码</param>
+        </member>
+        <member name="T:Device_Link_LTSMC.AxisErroCallBack">
+            <summary>
+            轴向错误委托
+            </summary>
+            <param name="erroCode">错误代码</param>
+            <param name="erroType">错误类型</param>
+            <param name="erroTip">错误提示</param>
+            <param name="axis">出错轴向</param>
+            <param name="optionFunction">出错函数</param>
+        </member>
+        <member name="T:Device_Link_LTSMC.LSTMCException">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.LSTMCException.axis">
+            <summary>
+            异常轴向
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.LSTMCException.ErroCode">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.LSTMCException.ErroMessage">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LSTMCException.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="msg">异常消息</param>
+        </member>
+        <member name="T:Device_Link_LTSMC.Tools">
+            <summary>
+            工具类
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.Tools.GetZeroModeByString(System.String)">
+            <summary>
+            根据字符串获取对应的回零模式
+            </summary>
+            <param name="mode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.Tools.GetEnumTypeByString``1(System.String)">
+            <summary>
+            根据字符串匹配对应的枚举类型
+            </summary>
+            <param name="type">枚举类型的字符串</param>
+            <returns>对应字符串的枚举类型，如果字符串错误则抛出错误</returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.Tools.GetPointDistance``1(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            获取两个点的距离
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="p1"></param>
+            <param name="p2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.Tools.GetErroTypeTip(Device_Link_LTSMC.ErroType)">
+            <summary>
+            根据错误类型获取错误提示
+            </summary>
+            <param name="type">错误类型</param>
+            <returns>错误提示</returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.Tools.GetEnumTypeByType``2(``1)">
+            <summary>
+            获取枚举类型 
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="V"></typeparam>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.Tools.GetErroTypeTipByErroCode(System.Int16)">
+            <summary>
+            根据short类型的错误码获取对应的错误提示
+            </summary>
+            <param name="code">错误码</param>
+            <returns>错误提示</returns>
+        </member>
+        <member name="T:Device_Link_LTSMC.Axis">
+            <summary>
+            轴向
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Axis.X">
+            <summary>
+            X轴
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Axis.Y">
+            <summary>
+            Y轴
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Axis.Z">
+            <summary>
+            X轴
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Axis.U">
+            <summary>
+            U轴
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Axis.V">
+            <summary>
+            V轴
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Axis.W">
+            <summary>
+            W轴
+            </summary>
+        </member>
+        <member name="T:Device_Link_LTSMC.ZeroMode">
+            <summary>
+            回零模式
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroMode.OTTZ">
+            <summary>
+            一次回零
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroMode.OTTZAFF">
+            <summary>
+            一次回零加反找
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroMode.TTTZ">
+            <summary>
+            两次回零
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroMode.OTTZAEZ">
+            <summary>
+            一次回零+EZ
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroMode.EZTZ">
+            <summary>
+            EZ回零
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroMode.OTTZAFFEZ">
+            <summary>
+            一次回零加反找EZ
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroMode.OPLS">
+            <summary>
+            远点锁存
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroMode.OPAEZLS">
+            <summary>
+            远点加EZ锁存
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroMode.EZLS">
+            <summary>
+            EZ锁存
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroMode.OPAFFEZLS">
+            <summary>
+            原点加反向EZ锁存
+            </summary>
+        </member>
+        <member name="T:Device_Link_LTSMC.OffectMode">
+            <summary>
+            偏移模式
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.OffectMode.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.OffectMode.FZLO">
+            <summary>
+            先置零后偏移
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.OffectMode.FOLZ">
+            <summary>
+            线偏移后置零
+            </summary>
+        </member>
+        <member name="T:Device_Link_LTSMC.LineInterItem">
+            <summary>
+            线性插补数据的一项
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LineInterItem.Axis">
+            <summary>
+            轴向
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LineInterItem.TargetPosition">
+            <summary>
+            目标距离
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.LineInterItem.#ctor(Device_Link_LTSMC.Axis,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="Axis">轴向</param>
+            <param name="TargetPosition">目标距离</param>
+        </member>
+        <member name="T:Device_Link_LTSMC.LineInterData">
+            <summary>
+            线性插补数据
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.LineInterData._index">
+            <summary>
+            遍历所用的序号
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LineInterData.MaxSpeed">
+            <summary>
+            最大速度
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LineInterData.AccTime">
+            <summary>
+            加速时间
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LineInterData.DecTime">
+            <summary>
+            减速时间
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LineInterData.Count">
+            <summary>
+            集合内的元素的数量
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LineInterData.Current">
+            <summary>
+            遍历所用的当前对象
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.LineInterData.items">
+            <summary>
+            项的集合
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.LineInterData.Item(System.Int32)">
+            <summary>
+            获取对应的item如果为空则返回LineInterItem.Empty
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LineInterData.#ctor(System.Int32,System.Double,System.Double)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="MaxSpeed">最大速度</param>
+            <param name="AccTime">加速时间</param>
+            <param name="DecTime">减速时间</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LineInterData.Add(Device_Link_LTSMC.LineInterItem)">
+            <summary>
+            添加一个子项
+            </summary>
+            <param name="item">子项</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LineInterData.Remove(Device_Link_LTSMC.LineInterItem)">
+            <summary>
+            移除一个项
+            </summary>
+            <param name="item">子项</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.LineInterData.GetEnumerator">
+            <summary>
+            返回枚举器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LineInterData.MoveNext">
+            <summary>
+            移往下一个
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Device_Link_LTSMC.LineInterData.Reset">
+            <summary>
+            重置
+            </summary>
+        </member>
+        <member name="T:Device_Link_LTSMC.SingleAxisAnySpeedTaskData">
+            <summary>
+            单轴任意速度规划数据
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.SingleAxisAnySpeedTaskData._emptyData">
+            <summary>
+            为空的数据
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.SingleAxisAnySpeedTaskData._position">
+            <summary>
+            位置规划
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.SingleAxisAnySpeedTaskData._time">
+            <summary>
+            时间规划
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.SingleAxisAnySpeedTaskData._percent">
+            <summary>
+            速率规划
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.SingleAxisAnySpeedTaskData._vel">
+            <summary>
+            速度规划
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.SingleAxisAnySpeedTaskData._isBack">
+            <summary>
+            是否自动回归
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.SingleAxisAnySpeedTaskData._mode">
+            <summary>
+            模式
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.Empty">
+            <summary>
+            为空的数据
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.IsReady">
+            <summary>
+            返回数据设置是否正确（位置和时间还有速率数量长度需要一致）
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.PositionArray">
+            <summary>
+            位置列表
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.TimeArray">
+            <summary>
+            时间列表
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.PrecentArray">
+            <summary>
+            速率的列表
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.VelArray">
+            <summary>
+            速度的列表
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.Mode">
+            <summary>
+            速度速度规划模式
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.Position">
+            <summary>
+            位置规划
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.Time">
+            <summary>
+            时间规划
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.Percent">
+            <summary>
+            速率规划
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.Vel">
+            <summary>
+            速度规划
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.IsBack">
+            <summary>
+            是否自动回归
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.#ctor(Device_Link_LTSMC.SingleSpeedTaskMode)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="Mode">规划模式</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.AddPTS(System.Double,System.Double,System.Double)">
+            <summary>
+            添加一条数据
+            </summary>
+            <param name="pos">位置</param>
+            <param name="time">从上一个位置到这一个位置的时间(改时间为时刻，所以需要加上之前的时间)</param>
+            <param name="precent">速率</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.AddPTT(System.Double,System.Double)">
+            <summary>
+            添加一条数据
+            </summary>
+            <param name="pos">位置</param>
+            <param name="time">从上一个位置到这一个位置的时间(改时间为时刻，所以需要加上之前的时间)</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.AddPVT(System.Double,System.Double,System.Double)">
+            <summary>
+            添加一条数据
+            </summary>
+            <param name="pos">位置</param>
+            <param name="time">时间</param>
+            <param name="vel">速度</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.Clear">
+            <summary>
+            清除所有
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.SetAutoBack">
+            <summary>
+            设置数据能够自动回归
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.SetAutoBackEveryData(System.Double)">
+            <summary>
+            设置每条数据执行完后都回到某个点(注此方法并不通用)
+            </summary>
+            <param name="position">某个点(相对位置)</param>
+        </member>
+        <member name="M:Device_Link_LTSMC.SingleAxisAnySpeedTaskData.GetListClone(System.Collections.Generic.List{System.Double})">
+            <summary>
+            返回list的克隆对象 并且翻转 去掉最后一个
+            </summary>
+            <param name="da"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Device_Link_LTSMC.DrawCircleData">
+            <summary>
+            画圆数据
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._horPosition">
+            <summary>
+            横轴位置
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._horVel">
+            <summary>
+            横轴速度
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._horTime">
+            <summary>
+            横轴时间
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._vecPosition">
+            <summary>
+            纵轴位置
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._vecVel">
+            <summary>
+            纵轴速度
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._vecTime">
+            <summary>
+            纵轴时间
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._accurary">
+            <summary>
+            精度
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._time">
+            <summary>
+            总运动时间
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._longR">
+            <summary>
+            长半轴
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._shortR">
+            <summary>
+            短半轴
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._angle">
+            <summary>
+            角度
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._dir">
+            <summary>
+            运动方向
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._horAxis">
+            <summary>
+            横轴
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.DrawCircleData._vecAxis">
+            <summary>
+            纵轴
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.Dir">
+            <summary>
+            运动方向
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.VecAxis">
+            <summary>
+            纵轴
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.DrawCircleData.#ctor(System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="time"></param>
+            <param name="longR"></param>
+            <param name="shortR"></param>
+            <param name="angle"></param>
+            <param name="accurary"></param>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.ToHorPositionArray">
+            <summary>
+            横轴位置列表
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.ToHorVelArray">
+            <summary>
+            横轴速度列表
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.ToHorTimeArray">
+            <summary>
+            横轴时间列表
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.ToVecPositionArray">
+            <summary>
+            纵轴位置列表
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.ToVecVelArray">
+            <summary>
+            纵轴速度列表
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.ToVecTimeArray">
+            <summary>
+            纵轴时间列表
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.HorAxis">
+            <summary>
+            横轴
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.Time">
+            <summary>
+            总运动时间
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.DrawCircleData.Length">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.DrawCircleData.GetDrawCircData">
+            <summary>
+            计算形成圆的数据
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.DrawCircleData.GetDrawCircleAccuracyData(System.Double,System.Double,System.Boolean)">
+            <summary>
+            计算每个象限的数据
+            </summary>
+            <param name="startAngle">起始角度</param>
+            <param name="everyAngle">每份角度</param>
+            <param name="isLast"></param>
+        </member>
+        <member name="T:Device_Link_LTSMC.SingleSpeedTaskMode">
+            <summary>
+            单轴任意速度规划模式
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.SingleSpeedTaskMode.PTT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.SingleSpeedTaskMode.PTS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.SingleSpeedTaskMode.PVT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Device_Link_LTSMC.Direction">
+            <summary>
+            方向
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Direction.Forward">
+            <summary>
+            正向
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.Direction.Back">
+            <summary>
+            反向
+            </summary>
+        </member>
+        <member name="T:Device_Link_LTSMC.PortSatte">
+            <summary>
+            端口的电平状态
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.PortSatte.E">
+            <summary>
+            端口错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.PortSatte.H">
+            <summary>
+            高电平
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.PortSatte.L">
+            <summary>
+            低电平
+            </summary>
+        </member>
+        <member name="T:Device_Link_LTSMC.ToZeroSpeed">
+            <summary>
+            归零速度数据
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroSpeed.XSpeed">
+            <summary>
+            X轴速度
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroSpeed.YSpeed">
+            <summary>
+            Y轴速度
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroSpeed.ZSpeed">
+            <summary>
+            Z轴速度
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroSpeed.USpeed">
+            <summary>
+            U轴速度
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroSpeed.VSpeed">
+            <summary>
+            V轴速度
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroSpeed.WSpeed">
+            <summary>
+            W轴速度
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.ToZeroSpeed.Item(Device_Link_LTSMC.Axis)">
+            <summary>
+            根据轴向获取速度
+            </summary>
+            <param name="axis">轴向</param>
+            <returns>速度</returns>
+        </member>
+        <member name="T:Device_Link_LTSMC.ToZeroParameter">
+            <summary>
+            归零参数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroParameter.XParameter">
+            <summary>
+            X轴的参数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroParameter.YParameter">
+            <summary>
+            Y轴的参数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroParameter.ZParameter">
+            <summary>
+            Z轴的参数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroParameter.UParameter">
+            <summary>
+            U轴的参数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroParameter.VParameter">
+            <summary>
+            V轴的参数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ToZeroParameter.WParameter">
+            <summary>
+            W轴的参数
+            </summary>
+        </member>
+        <member name="P:Device_Link_LTSMC.ToZeroParameter.Item(Device_Link_LTSMC.Axis)">
+            <summary>
+            获取当前轴向的参数值
+            </summary>
+            <param name="axis">轴向</param>
+            <returns>参数值</returns>
+        </member>
+        <member name="T:Device_Link_LTSMC.ZeroParameterGroup">
+            <summary>
+            回零参数组s
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroParameterGroup.Speed">
+            <summary>
+            速度
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ZeroParameterGroup.Dirt">
+            <summary>
+            方向
+            </summary>
+        </member>
+        <member name="M:Device_Link_LTSMC.ZeroParameterGroup.#ctor(System.Double,Device_Link_LTSMC.Direction)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="Speed">速度</param>
+            <param name="Dirt">方向</param>
+        </member>
+        <member name="T:Device_Link_LTSMC.ErroType">
+            <summary>
+            错误类型枚举
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.Success">
+            <summary>
+            操作成功
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.Unknown_Error">
+            <summary>
+            未知错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.Parameter_Error">
+            <summary>
+            参数错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.Operate_Timeout">
+            <summary>
+            操作超时
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.State_Busy">
+            <summary>
+            状态忙
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.Too_Many_Connections">
+            <summary>
+            链接太多
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.Interpolation_Error">
+            <summary>
+            插补错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.Connection_Failure">
+            <summary>
+            连接失败
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.Cannot_be_connected">
+            <summary>
+            无法连接
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.Axis_number_is_out_of_range">
+            <summary>
+            卡号或轴号超出范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.transport_error">
+            <summary>
+            数据传输错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.firmware_file_error">
+            <summary>
+            固件文件错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.The_firmware_does_not_match">
+            <summary>
+            固件文件不匹配
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.firmware_parameters_error">
+            <summary>
+            固件参数错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.The_current_state_of_firmware_is_not_allowed_to_operate">
+            <summary>
+            固件当前状态不允许操作
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.The_feature_is_not_supported">
+            <summary>
+            不支持该功能
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.password_error">
+            <summary>
+            密码错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.The_number_of_password_inputs_is_limited">
+            <summary>
+            密码输入次数受限
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_AXIS_SEL_ERR">
+            <summary>
+            手轮脉冲的轴档位选择超出范围（软件控制模式）
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_HAND_AXIS_NUM_ERR">
+            <summary>
+            手轮脉冲的轴映射数量超出范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_AXIS_RATIO_ERR">
+            <summary>
+            手轮脉冲的倍率档位选择超出范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_HANDWH_START">
+            <summary>
+            已进入手轮脉冲模式，不能切换软硬件控制模式
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_AXIS_BUSY_STATE">
+            <summary>
+            轴已在运动，不能切换到手轮模式
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_LIST_NUM_ERR">
+            <summary>
+            LIST号超出范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_LIST_NOT_OEPN">
+            <summary>
+            LIST没有初始化
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_PARA_NOT_VALID">
+            <summary>
+            参数不在有效范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_LIST_HAS_OPEN">
+            <summary>
+            LIST已经打开
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_MAIN_LIST_NOT_OPEN">
+            <summary>
+            LIST没有初始化
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_AXIS_NUM_ERR">
+            <summary>
+            轴数不在有效范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_AXIS_MAP_ARRAY_ERR">
+            <summary>
+            轴映射表为空
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_MAP_AXIS_ERR">
+            <summary>
+            映射轴错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_MAP_AXIS_BUSY">
+            <summary>
+            映射轴忙
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_PARA_SET_FORBIT">
+            <summary>
+            运动中不允许更改参数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_FIFO_FULL">
+            <summary>
+            缓冲区已满
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_RADIUS_ERR">
+            <summary>
+            半径为0或小于两点的距离的一半
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_MAINLIST_HAS_START">
+            <summary>
+            LIST已经启动
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_ACC_TIME_ZERO">
+            <summary>
+            加减速时间为0
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_MAINLIST_NOT_START">
+            <summary>
+            主要LIST没有启动
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_POINT_SAME_ON_RADIUS">
+            <summary>
+            圆弧插补在半径模式下起点和终点不能重合
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.MCVP_SMOOTH_TIME_SET_ERROR">
+            <summary>
+            s时间设置错误(小于等于0)
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.MCVP_START_VEL_SET_ERROR">
+            <summary>
+            起始速度绝对值设置错误(小于0)
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.MCVP_STEADY_VEL_SET_ERROR">
+            <summary>
+            最大速度绝对值设置错误(小于等于0)
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.MCVP_END_VEL_SET_ERROR">
+            <summary>
+            停止速度绝对值设置错误(小于0)
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.MCVP_TOTAL_LENGTH_SET_ERROR">
+            <summary>
+            运动距离为0，无法运动
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_AXIS_INDEX">
+            <summary>
+            所选轴超出最大值
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_SET_WHILE_MOVING">
+            <summary>
+            轴正在运动，不能设置参数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_ENTER_WHILE_MOVING">
+            <summary>
+            轴正在运动，不能进入该模式
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_PEL_STATE">
+            <summary>
+            轴处于正限位，不能正向运动
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_NEL_STATE">
+            <summary>
+            轴处于负限位，不能负向运动
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_SOFT_PEL_STATE">
+            <summary>
+            轴处于软正限位，不能正向运动
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_SOFT_NEL_STATE">
+            <summary>
+            轴处于软负限位，不能负向运动
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_FORCE_IN_OTHER_MODE">
+            <summary>
+            轴处于非点位模式，不能强制变位
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_MAX_VEL_ZERO">
+            <summary>
+            设置最大速度错误，不能为0
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_EQU_ZERO">
+            <summary>
+            设置轴当量错误，不能为0
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_BACKLASH_NEG">
+            <summary>
+            设置反向间隙错误，不能为负值
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_MAX_PULSE">
+            <summary>
+            设置位置错误，已超出允许范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_CMP_EXCEED_MAX_AXISES">
+            <summary>
+            所选比较轴超出范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_CMP_EXCEED_MAX_INDEX">
+            <summary>
+            比较点数已满，不能继续添加
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_CMP_EXCEED_MAX_IO">
+            <summary>
+            进行比较的IO超出范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_CMP_EXCEED_MAX_CHAN">
+            <summary>
+            选择的高速比较IO超出范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERR_MAP_AXISIO_MAX_AXISES">
+            <summary>
+            映射的轴超出范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.PVT_ERROR_AXISES_OVER_RANGE">
+            <summary>
+            所选轴超出范围
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.PVT_ERROR_INDEX_OVER_RANGE">
+            <summary>
+            控制点已满，不能继续添加
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.PVT_ERROR_INDEX_EXCEED">
+            <summary>
+            控制点已满，不能继续添加
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.PVT_ERROR_TIME_EROOR">
+            <summary>
+            插入段时间为0或者负数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.HOME_ERROR_AXISES_OVER_RANGE">
+            <summary>
+            所选轴超出最大值
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.HOME_ERROR_MAX_VEL">
+            <summary>
+            设置的最大速度为0
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.HOME_ERROR_MAX_ACC">
+            <summary>
+            设置的加速度小于等于0
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.HOME_ERROR_BOTH_LIMIT">
+            <summary>
+            同时处于正、负限位,无法启动回零运动
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_STOP_USER">
+            <summary>
+            用户手动停止
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_STOP_OTHERTASK">
+            <summary>
+            其他任务牵连停止
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_PARA_CANNOT_MODIFIY">
+            <summary>
+            少数参数不让修改, SET扩展返回
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_ARRAY_OVER">
+            <summary>
+            数组越界
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_VAR_TOOMUCH">
+            <summary>
+            变量个数超过
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_ARRAY_TOOMUCH">
+            <summary>
+            数组个数超过
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_ARRAY_NOSPACE">
+            <summary>
+            数组没有空间
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_SUB_TOOMUCH">
+            <summary>
+            SUB过多
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_LABEL_NAMEERR">
+            <summary>
+            标识符命名错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_LABEL_TOOMANYCHARES">
+            <summary>
+            标识符命名过长
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_NO_RIGHTBRACKET">
+            <summary>
+            没有右括号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_UNKOWNCHAR">
+            <summary>
+            不认识的字符
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_UNKOWN_LABEL">
+            <summary>
+            不认识的名称, 表达式中碰到
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_STOP_INVALIDCMD">
+            <summary>
+            不认识的命令
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_STOP_OVERSTACK">
+            <summary>
+            超过堆栈层数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_OVER_RECURSION">
+            <summary>
+            递归过多
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_NO_QUOTEEND">
+            <summary>
+            引号没有结束
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_CMD_CANNOTREAD">
+            <summary>
+            不能读取, 不能在表达式中使用
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_CMD_CANNOTRUN">
+            <summary>
+            函数之类不能出现在行首, 只能在表达式中使用
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_LINE_MUST_END">
+            <summary>
+            期望行结束, 一些特殊指令需要
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_ARRAY_NEEDINDEX">
+            <summary>
+            数组需要编号，参数也使用
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_NOTBRACKET_AFTERVAR">
+            <summary>
+            变量后不需要编号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_DIM_CONFLICT">
+            <summary>
+            数组重新定义冲突, 长度不一致
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_DIM_ARRAYLENGTHERR">
+            <summary>
+            数组长度错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_DIM_LABEL_SUB">
+            <summary>
+            定义, 名称 SUB
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_DIM_LABEL_PARA">
+            <summary>
+            定义, 名称 PARA
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_DIM_LABEL_RESERVE">
+            <summary>
+            定义, 名称保留
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_UNWANT_CHAR">
+            <summary>
+            不能出现的字符
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_STACK_NOPUSH">
+            <summary>
+            POP时没有压栈
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_FORMAT_ERR">
+            <summary>
+            格式错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_SET_OVER">
+            <summary>
+            参数溢出, para(10) 10过大
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_PARA_RANGEERR">
+            <summary>
+            一些函数和命令的参数范围错误
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_PARA_TOOMANY">
+            <summary>
+            一些函数和命令的参数过多
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_PARA_TOOFEW">
+            <summary>
+            一些函数和命令的参数过少
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_NO_EXPR">
+            <summary>
+            读取不到表达式
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_OPERNOPARA">
+            <summary>
+            操作符没有参数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_NOPARA_BEFOREOPER">
+            <summary>
+            操作符前面没有参数
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_SIGNAL_CANNOTINEXPR">
+            <summary>
+            符号不能在表达式中使用
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_NEED_OPER">
+            <summary>
+            需要双目操作符
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_SUB_NOTSUB">
+            <summary>
+            CALL 的不是SUB
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_NO_AUTO">
+            <summary>
+            没有AUTO所以不启动
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_EQ_WANTED">
+            <summary>
+            赋值语句没有等号, 变量或者参数等只能为赋值语句
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_FILE_VAIN">
+            <summary>
+            程序文件空
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_SUB_RENAME">
+            <summary>
+            SUB重名, 包括与其他的名称重了
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_TASK_RUNNING">
+            <summary>
+            任务已经运行中
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_NEED_COMMA_BETWEEN_PARA">
+            <summary>
+            操作数之间需要逗号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_NO_LEFTBRACKET">
+            <summary>
+            没有右括号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_TOOMANY_IFNESTED">
+            <summary>
+            IF嵌套太多
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_TOOMANY_LOOPNESTED">
+            <summary>
+            LOOP嵌套太多
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_MOVEAXISES_FEW">
+            <summary>
+            插补轴太少
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_CONST_VAR">
+            <summary>
+            变量不能修改
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_NOT_ONLINECMD">
+            <summary>
+            不能作为在线命令
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_AXIS_OVER">
+            <summary>
+            轴号超出
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_CRD_OVER">
+            <summary>
+            插补系超出
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.ERROR_ZSHELL_STOP_UNKNOWN">
+            <summary>
+            未知错误, 不可能出现的，一般是内部错误引起
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroType.EMPTY">
+            <summary>
+            空
+            </summary>
+        </member>
+        <member name="T:Device_Link_LTSMC.ErroInfoClass">
+            <summary>
+            错误类型说明类
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.Success">
+            <summary>
+            错误码：0
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.Unknown_Error">
+            <summary>
+            错误码：1
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.Parameter_Error">
+            <summary>
+            错误码：2
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.Operate_Timeout">
+            <summary>
+            错误码：3
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.State_Busy">
+            <summary>
+            错误码：4
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.Too_Many_Connections">
+            <summary>
+            错误码：5
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.Interpolation_Error">
+            <summary>
+            错误码：6
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.Connection_Failure">
+            <summary>
+            错误码：7
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.Cannot_be_connected">
+            <summary>
+            错误码：8
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.Axis_number_is_out_of_range">
+            <summary>
+            错误码：9
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.transport_error">
+            <summary>
+            错误码：10
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.firmware_file_error">
+            <summary>
+            错误码：12
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.The_firmware_does_not_match">
+            <summary>
+            错误码：14
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.firmware_parameters_error">
+            <summary>
+            错误码：20
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.The_current_state_of_firmware_is_not_allowed_to_operate">
+            <summary>
+            错误码：22
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.The_feature_is_not_supported">
+            <summary>
+            错误码：24
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.password_error">
+            <summary>
+            错误码：25
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.The_number_of_password_inputs_is_limited">
+            <summary>
+            错误码：26
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_AXIS_SEL_ERR">
+            <summary>
+            错误码：30
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_HAND_AXIS_NUM_ERR">
+            <summary>
+            错误码：31
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_AXIS_RATIO_ERR">
+            <summary>
+            错误码：32
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_HANDWH_START">
+            <summary>
+            错误码：33
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_AXIS_BUSY_STATE">
+            <summary>
+            错误码：34
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_LIST_NUM_ERR">
+            <summary>
+            错误码：50
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_LIST_NOT_OEPN">
+            <summary>
+            错误码：51
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_PARA_NOT_VALID">
+            <summary>
+            错误码：52
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_LIST_HAS_OPEN">
+            <summary>
+            错误码：53
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_MAIN_LIST_NOT_OPEN">
+            <summary>
+            错误码：54
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_AXIS_NUM_ERR">
+            <summary>
+            错误码：55
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_AXIS_MAP_ARRAY_ERR">
+            <summary>
+            错误码：56
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_MAP_AXIS_ERR">
+            <summary>
+            错误码：57
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_MAP_AXIS_BUSY">
+            <summary>
+            错误码：58
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_PARA_SET_FORBIT">
+            <summary>
+            错误码：59
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_FIFO_FULL">
+            <summary>
+            错误码：60
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_RADIUS_ERR">
+            <summary>
+            错误码：61
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_MAINLIST_HAS_START">
+            <summary>
+            错误码：62
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_ACC_TIME_ZERO">
+            <summary>
+            错误码：63
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_MAINLIST_NOT_START">
+            <summary>
+            错误码：64
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_POINT_SAME_ON_RADIUS">
+            <summary>
+            错误码：67
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.MCVP_SMOOTH_TIME_SET_ERROR">
+            <summary>
+            错误码：80
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.MCVP_START_VEL_SET_ERROR">
+            <summary>
+            错误码：81
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.MCVP_STEADY_VEL_SET_ERROR">
+            <summary>
+            错误码：82
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.MCVP_END_VEL_SET_ERROR">
+            <summary>
+            错误码：83
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.MCVP_TOTAL_LENGTH_SET_ERROR">
+            <summary>
+            错误码：84
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_AXIS_INDEX">
+            <summary>
+            错误码：101
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_SET_WHILE_MOVING">
+            <summary>
+            错误码：102
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_ENTER_WHILE_MOVING">
+            <summary>
+            错误码：103
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_PEL_STATE">
+            <summary>
+            错误码：104
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_NEL_STATE">
+            <summary>
+            错误码：105
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_SOFT_PEL_STATE">
+            <summary>
+            错误码：106
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_SOFT_NEL_STATE">
+            <summary>
+            错误码：107
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_FORCE_IN_OTHER_MODE">
+            <summary>
+            错误码：108
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_MAX_VEL_ZERO">
+            <summary>
+            错误码：109
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_EQU_ZERO">
+            <summary>
+            错误码：110
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_BACKLASH_NEG">
+            <summary>
+            错误码：111
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_MAX_PULSE">
+            <summary>
+            错误码：112
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_CMP_EXCEED_MAX_AXISES">
+            <summary>
+            错误码：121
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_CMP_EXCEED_MAX_INDEX">
+            <summary>
+            错误码：122
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_CMP_EXCEED_MAX_IO">
+            <summary>
+            错误码：123
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_CMP_EXCEED_MAX_CHAN">
+            <summary>
+            错误码：124
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERR_MAP_AXISIO_MAX_AXISES">
+            <summary>
+            错误码：130
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.PVT_ERROR_AXISES_OVER_RANGE">
+            <summary>
+            错误码：140
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.PVT_ERROR_INDEX_OVER_RANGE">
+            <summary>
+            错误码：141
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.PVT_ERROR_INDEX_EXCEED">
+            <summary>
+            错误码：142
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.PVT_ERROR_TIME_EROOR">
+            <summary>
+            错误码：143
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.HOME_ERROR_AXISES_OVER_RANGE">
+            <summary>
+            错误码：200
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.HOME_ERROR_MAX_VEL">
+            <summary>
+            错误码：202
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.HOME_ERROR_MAX_ACC">
+            <summary>
+            错误码：203
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.HOME_ERROR_BOTH_LIMIT">
+            <summary>
+            错误码：207
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_STOP_USER">
+            <summary>
+            错误码：1040
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_STOP_OTHERTASK">
+            <summary>
+            错误码：1041
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_PARA_CANNOT_MODIFIY">
+            <summary>
+            错误码：1042
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_ARRAY_OVER">
+            <summary>
+            错误码：1043
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_VAR_TOOMUCH">
+            <summary>
+            错误码：1044
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_ARRAY_TOOMUCH">
+            <summary>
+            错误码：1045
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_ARRAY_NOSPACE">
+            <summary>
+            错误码：1046
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_SUB_TOOMUCH">
+            <summary>
+            错误码：1047
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_LABEL_NAMEERR">
+            <summary>
+            错误码：1048
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_LABEL_TOOMANYCHARES">
+            <summary>
+            错误码：1049
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_NO_RIGHTBRACKET">
+            <summary>
+            错误码：1050
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_UNKOWNCHAR">
+            <summary>
+            错误码：1051
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_UNKOWN_LABEL">
+            <summary>
+            错误码：1052
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_STOP_INVALIDCMD">
+            <summary>
+            错误码：1053
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_STOP_OVERSTACK">
+            <summary>
+            错误码：1054
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_OVER_RECURSION">
+            <summary>
+            错误码：1055
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_NO_QUOTEEND">
+            <summary>
+            错误码：1056
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_CMD_CANNOTREAD">
+            <summary>
+            错误码：1057
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_CMD_CANNOTRUN">
+            <summary>
+            错误码：1058
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_LINE_MUST_END">
+            <summary>
+            错误码：1059
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_ARRAY_NEEDINDEX">
+            <summary>
+            错误码：1060
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_NOTBRACKET_AFTERVAR">
+            <summary>
+            错误码：1061
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_DIM_CONFLICT">
+            <summary>
+            错误码：1062
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_DIM_ARRAYLENGTHERR">
+            <summary>
+            错误码：1063
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_DIM_LABEL_SUB">
+            <summary>
+            错误码：1064
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_DIM_LABEL_PARA">
+            <summary>
+            错误码：1065
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_DIM_LABEL_RESERVE">
+            <summary>
+            错误码：1066
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_UNWANT_CHAR">
+            <summary>
+            错误码：1067
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_STACK_NOPUSH">
+            <summary>
+            错误码：1068
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_FORMAT_ERR">
+            <summary>
+            错误码：1070
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_SET_OVER">
+            <summary>
+            错误码：1071
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_PARA_RANGEERR">
+            <summary>
+            错误码：1072
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_PARA_TOOMANY">
+            <summary>
+            错误码：1073
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_PARA_TOOFEW">
+            <summary>
+            错误码：1074
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_NO_EXPR">
+            <summary>
+            错误码：1075
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_OPERNOPARA">
+            <summary>
+            错误码：1076
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_NOPARA_BEFOREOPER">
+            <summary>
+            错误码：1077
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_SIGNAL_CANNOTINEXPR">
+            <summary>
+            错误码：1078
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_NEED_OPER">
+            <summary>
+            错误码：1079
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_SUB_NOTSUB">
+            <summary>
+            错误码：1080
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_NO_AUTO">
+            <summary>
+            错误码：1081
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_EQ_WANTED">
+            <summary>
+            错误码：1082
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_FILE_VAIN">
+            <summary>
+            错误码：1083
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_SUB_RENAME">
+            <summary>
+            错误码：1084
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_TASK_RUNNING">
+            <summary>
+            错误码：1085
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_NEED_COMMA_BETWEEN_PARA">
+            <summary>
+            错误码：1086
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_NO_LEFTBRACKET">
+            <summary>
+            错误码：1087
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_TOOMANY_IFNESTED">
+            <summary>
+            错误码：1088
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_TOOMANY_LOOPNESTED">
+            <summary>
+            错误码：1089
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_MOVEAXISES_FEW">
+            <summary>
+            错误码：1090
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_CONST_VAR">
+            <summary>
+            错误码：1091
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_NOT_ONLINECMD">
+            <summary>
+            错误码：1092
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_AXIS_OVER">
+            <summary>
+            错误码：1093
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_CRD_OVER">
+            <summary>
+            错误码：1094
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.ErroInfoClass.ERROR_ZSHELL_STOP_UNKNOWN">
+            <summary>
+            错误码：1099
+            </summary>
+        </member>
+        <member name="T:Device_Link_LTSMC.AxisIOStutas">
+            <summary>
+            信号状态
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.Defult">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.ALM">
+            <summary>
+            伺服告警信号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.ELZ">
+            <summary>
+            正硬限位信号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.ELF">
+            <summary>
+            负硬限位信号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.EMG">
+            <summary>
+            急停信号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.ORG">
+            <summary>
+            原点信号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.SLZ">
+            <summary>
+            正软限位信号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.SLF">
+            <summary>
+            负软限位信号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.INP">
+            <summary>
+            伺服到位信号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.EZ">
+            <summary>
+            EZ信号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.RDY">
+            <summary>
+            SMC100专用，伺服准备信号
+            </summary>
+        </member>
+        <member name="F:Device_Link_LTSMC.AxisIOStutas.DSTP">
+            <summary>
+            减速停止信号
+            </summary>
+        </member>
+    </members>
+</doc>

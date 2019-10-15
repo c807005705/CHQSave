@@ -1,0 +1,28 @@
+[2019/10/12 13:41:44 , Normal] ->  
+ [2019/10/12 13:44:40 , Normal] ->  
+ [2019/10/12 13:45:38 , Normal] ->  
+ [2019/10/12 13:49:06 , Normal] ->  
+ [2019/10/12 13:50:23 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 425
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 353
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 74 
+ [2019/10/12 13:50:28 , Normal] ->  
+ [2019/10/12 13:58:31 , Normal] ->  
+ [2019/10/12 14:02:36 , Normal] ->  
+ 

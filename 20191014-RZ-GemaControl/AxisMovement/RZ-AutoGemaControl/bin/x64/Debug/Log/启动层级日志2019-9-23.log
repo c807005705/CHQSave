@@ -1,0 +1,19 @@
+[2019/9/23 13:08:00 , Normal] ->  
+ [2019/9/23 13:08:13 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RZ_AutoGemaControl.GameConsole.button2_Click_2(Object sender, EventArgs e) 位置 C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 422
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 383
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\c8070\Desktop\20190826-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 67 
+ 

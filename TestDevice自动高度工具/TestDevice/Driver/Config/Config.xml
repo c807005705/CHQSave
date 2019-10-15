@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deviceInfo xmlns="http://schemas.chuangen.name/mobot/2010">
+  <id>ffdbbfd4-c6b3-4b48-adca-7a9929830512</id>
+  <model>&lt;型号&gt;</model>
+  <manufacturer>
+  </manufacturer>
+  <description>
+  </description>
+  <connectMethod>手机测试盒</connectMethod>
+  <settings>
+    <item key="ReadTimeout" value="30000" />
+    <item key="Type" value="TestBox(USB)" />
+    <item key="EndPoint" value="COM4" />
+    <item key="SerialNumber" value="YC201536541058" />
+    <item key="Camera.Settings.ResolutionMode" value="0" />
+    <item key="Camera.Settings.SnapSpeed" value="0" />
+    <item key="Camera.Settings.ExposureTime" value="0.014" />
+    <item key="Camera.Settings.SnapMode" value="0" />
+    <item key="Camera.Settings.TriggerPolarity" value="0" />
+    <item key="Camera.Settings.StrobePolarity" value="1" />
+    <item key="Camera.Settings.Gain" value="8" />
+    <item key="Camera.Settings.AdLevel" value="1" />
+    <item key="Camera.Settings.BlackLevelAllow" value="False" />
+    <item key="Camera.Settings.BlackLevel" value="0" />
+    <item key="Camera.Settings.BlankingVer" value="0" />
+    <item key="Camera.Settings.BlankingHor" value="0" />
+    <item key="Camera.Settings.OutputWindowBounds" value="{632, 706, 896, 508}" />
+    <item key="Camera.Settings.AutoWhiteBalance" value="False" />
+    <item key="Camera.Settings.WhiteBalanceR" value="10" />
+    <item key="Camera.Settings.WhiteBalanceB" value="10" />
+    <item key="Display.Resolution" value="{480, 800}" />
+    <item key="ImageMark.Bounds" value="{45, 50, 150, 200}" />
+    <item key="ImageMark.BigWidth" value="50" />
+    <item key="ImageMark.SmallWidth" value="45" />
+    <item key="ImageMark.LineWidth" value="1" />
+    <item key="ImageMark.LineLength" value="3" />
+    <item key="ImageMark.MarkRange" value="[30, 80]" />
+    <item key="ImageMark.Result.Center" value="(3.5, 1)" />
+    <item key="ImageMark.Result.Size" value="{880, 500}" />
+    <item key="ImageMark.Result.Angle" value="0" />
+    <item key="ImageMark.Result.Direction" value="朝左" />
+    <item key="ImageMark.Result.ClipBounds" value="{-436, -249, 880, 500}" />
+    <item key="ImageMark.Result.Detection" value="EdgeDetection" />
+    <item key="Touchpad.TopLeft" value="(178, 29.6)" />
+    <item key="Touchpad.BottomRight" value="(92.5, -25.5)" />
+    <item key="Touchpad.ClickZ" value="5" />
+    <item key="Workspace.QuickStart" value="10" />
+    <item key="Motor.ActionAsyncMode" value="True" />
+    <item key="Motor.Speed" value="(491, 491, 139)" />
+    <item key="KEY.9" value="{141.44875, -4.95229166666667, 0, 0}; 5; Z+0+0;        ; (0, 0, 0); (0, 0, 0)" />
+    <item key="KEY.8" value="{141.769375, 9.39666666666667, 0, 0}; 5; Z+0+0;        ; (0, 0, 0); (0, 0, 0)" />
+    <item key="KEY.7" value="{142.5175, 22.7125, 0, 0}; 5; Z+0+0;        ; (0, 0, 0); (0, 0, 0)" />
+    <item key="KEY.6" value="{127.9825, -4.493125, 0, 0}; 5; Z+0+0;        ; (0, 0, 0); (0, 0, 0)" />
+    <item key="KEY.5" value="{127.448125, 9.51145833333333, 0, 0}; 5; Z+0+0;        ; (0, 0, 0); (0, 0, 0)" />
+    <item key="KEY.4" value="{127.9825, 23.056875, 0, 0}; 5; Z+0+0;        ; (0, 0, 0); (0, 0, 0)" />
+    <item key="KEY.0" value="{99.55375, 9.16708333333333, 0, 0}; 5; Z+0+0;        ; (0, 0, 0); (0, 0, 0)" />
+    <item key="KEY.1" value="{113.340625, 22.368125, 0, 0}; 5; Z+0+0;        ; (0, 0, 0); (0, 0, 0)" />
+    <item key="KEY.2" value="{114.08875, 9.16708333333333, 0, 0}; 5; Z+0+0;        ; (0, 0, 0); (0, 0, 0)" />
+    <item key="KEY.3" value="{113.554375, -4.493125, 0, 0}; 5; Z+0+0;        ; (0, 0, 0); (0, 0, 0)" />
+  </settings>
+</deviceInfo>

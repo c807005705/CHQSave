@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEB6AF8E-3C9B-4A41-8157-8C0BB73413EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DeviceServer</RootNamespace>
+    <AssemblyName>DeviceServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\MyWork\MyWork\NewMobot\src\Plugins\AutoTask\Root\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Mobot.Utils, Version=1.0.0.219, Culture=neutral, PublicKeyToken=1bacacee547266b3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\x86\Mobot.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeviceConfig.cs" />
+    <Compile Include="Expends.cs" />
+    <Compile Include="MainformTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainformTool.Designer.cs">
+      <DependentUpon>MainformTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.Command.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Method\Config.cs" />
+    <Compile Include="Method\SqLiteHelperDao.cs" />
+    <Compile Include="MianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MianForm.Designer.cs">
+      <DependentUpon>MianForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Method\Method.cs" />
+    <Compile Include="Method\TcpServer.cs" />
+    <Compile Include="Model\ServerResultMessage.cs" />
+    <Compile Include="Parameter.cs" />
+    <Compile Include="ParamterType.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\MotorPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MotorPosition.Designer.cs">
+      <DependentUpon>MotorPosition.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainformTool.resx">
+      <DependentUpon>MainformTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MianForm.resx">
+      <DependentUpon>MianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\MotorPosition.resx">
+      <DependentUpon>MotorPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Driver\Driver.csproj">
+      <Project>{ca1f7dda-b552-4a4a-9568-d0efa7fa607b}</Project>
+      <Name>Driver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Motor\Motor.csproj">
+      <Project>{f44df96f-5479-4234-80f4-b9e5e23f00d4}</Project>
+      <Name>Motor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Protocols\Protocols.csproj">
+      <Project>{f7e8dfbc-b68c-4661-add5-ddd9c01a1c23}</Project>
+      <Name>Protocols</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestDevice\TestDevice.csproj">
+      <Project>{829cb52f-d46c-4f72-bad1-14a37ffb983f}</Project>
+      <Name>TestDevice</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

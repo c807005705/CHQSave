@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F44DF96F-5479-4234-80F4-B9E5E23F00D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Motor</RootNamespace>
+    <AssemblyName>Motor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\MobotKey.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\x86\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mobot.Utils, Version=1.0.0.56, Culture=neutral, PublicKeyToken=1bacacee547266b3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\x86\Mobot.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FlashStream.Caches.cs" />
+    <Compile Include="FlashStream.cs" />
+    <Compile Include="IMotorAction.cs" />
+    <Compile Include="Protocols\Messages\X10StylusRestZMessage.cs" />
+    <Compile Include="Protocols\Messages\X7StopMessage.cs" />
+    <Compile Include="Protocols\Messages\X5TestQueryMessage.cs" />
+    <Compile Include="Protocols\Messages\X6TriggerSetMessage.cs" />
+    <Compile Include="Protocols\Messages\X5TestStatuMessage.cs" />
+    <Compile Include="Protocols\Messages\X4DrawCircleMessage.cs" />
+    <Compile Include="Protocols\Messages\X8TriggerMessage.cs" />
+    <Compile Include="Protocols\Messages\X9PressureGrams.cs" />
+    <Compile Include="TriggerType.cs" />
+    <Compile Include="MotorDriver.Commands.cs" />
+    <Compile Include="MotorDriver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="DeviceType.cs" />
+    <Compile Include="Protocols\ErrorValues.cs" />
+    <Compile Include="Protocols\Messages.cs" />
+    <Compile Include="Protocols\Messages\BatchStopMessage.cs" />
+    <Compile Include="Protocols\Messages\BatchModeMessage.cs" />
+    <Compile Include="Protocols\Messages\FailureMessage.cs" />
+    <Compile Include="Protocols\Messages\GetPositionMessage.cs" />
+    <Compile Include="Protocols\Messages\MoveMessage.cs" />
+    <Compile Include="Protocols\Messages\PingMessage.cs" />
+    <Compile Include="Protocols\Messages\ReadFlashMessage.cs" />
+    <Compile Include="Protocols\Messages\X1PenResetMessage.cs" />
+    <Compile Include="Protocols\Messages\ResetDeviceMessage.cs" />
+    <Compile Include="Protocols\Messages\ResetMessage.cs" />
+    <Compile Include="Protocols\Messages\X1FlipMessage.cs" />
+    <Compile Include="Protocols\Messages\X1LightStatuMessage.cs" />
+    <Compile Include="Protocols\Messages\X1MikeInOutMessage.cs" />
+    <Compile Include="Protocols\Messages\X1BackCameraMessage.cs" />
+    <Compile Include="Protocols\Messages\X1PenAngleMessage.cs" />
+    <Compile Include="Protocols\Messages\X1PenMessage.cs" />
+    <Compile Include="Protocols\Messages\X1PreCameraMessage.cs" />
+    <Compile Include="Protocols\Messages\X1FixInOutMessage.cs" />
+    <Compile Include="Protocols\Messages\X1PowerSwapMessage.cs" />
+    <Compile Include="Protocols\Messages\X1AudioSwapMessage.cs" />
+    <Compile Include="Protocols\Messages\X1SideKeyMessage.cs" />
+    <Compile Include="Protocols\Messages\X1PhoneClampedMessage.cs" />
+    <Compile Include="Protocols\Messages\SetUsbModeMessage.cs" />
+    <Compile Include="Protocols\Messages\SetUsbHubMessage.cs" />
+    <Compile Include="Protocols\Messages\SetIndoorLightMessage.cs" />
+    <Compile Include="Protocols\Messages\SetSpeedMessage.cs" />
+    <Compile Include="Protocols\Messages\SleepMessage.cs" />
+    <Compile Include="Protocols\Messages\SystemInfoMessage.cs" />
+    <Compile Include="Protocols\Messages\WriteFlashMessage.cs" />
+    <Compile Include="Protocols\Messages\X2PressureMessage.cs" />
+    <Compile Include="Protocols\MotorException.cs" />
+    <Compile Include="Protocols\Type\ArmRunType.cs" />
+    <Compile Include="Protocols\Ymodem\crc16ccit.cs" />
+    <Compile Include="Protocols\Ymodem\LegacyCommunication.cs" />
+    <Compile Include="Protocols\Ymodem\Packet.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Protocols\Protocols.csproj">
+      <Project>{f7e8dfbc-b68c-4661-add5-ddd9c01a1c23}</Project>
+      <Name>Protocols</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestDevice\TestDevice.csproj">
+      <Project>{829cb52f-d46c-4f72-bad1-14a37ffb983f}</Project>
+      <Name>TestDevice</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

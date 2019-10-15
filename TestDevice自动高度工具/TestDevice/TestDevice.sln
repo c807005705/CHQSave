@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceServer", "Dome\DeviceServer.csproj", "{EEB6AF8E-3C9B-4A41-8157-8C0BB73413EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver", "Driver\Driver.csproj", "{CA1F7DDA-B552-4A4A-9568-D0EFA7FA607B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Motor", "Motor\Motor.csproj", "{F44DF96F-5479-4234-80F4-B9E5E23F00D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Protocols", "Protocols\Protocols.csproj", "{F7E8DFBC-B68C-4661-ADD5-DDD9C01A1C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDevice", "TestDevice\TestDevice.csproj", "{829CB52F-D46C-4F72-BAD1-14A37FFB983F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEB6AF8E-3C9B-4A41-8157-8C0BB73413EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB6AF8E-3C9B-4A41-8157-8C0BB73413EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB6AF8E-3C9B-4A41-8157-8C0BB73413EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB6AF8E-3C9B-4A41-8157-8C0BB73413EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1F7DDA-B552-4A4A-9568-D0EFA7FA607B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1F7DDA-B552-4A4A-9568-D0EFA7FA607B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1F7DDA-B552-4A4A-9568-D0EFA7FA607B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1F7DDA-B552-4A4A-9568-D0EFA7FA607B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44DF96F-5479-4234-80F4-B9E5E23F00D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44DF96F-5479-4234-80F4-B9E5E23F00D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44DF96F-5479-4234-80F4-B9E5E23F00D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44DF96F-5479-4234-80F4-B9E5E23F00D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7E8DFBC-B68C-4661-ADD5-DDD9C01A1C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E8DFBC-B68C-4661-ADD5-DDD9C01A1C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E8DFBC-B68C-4661-ADD5-DDD9C01A1C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E8DFBC-B68C-4661-ADD5-DDD9C01A1C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829CB52F-D46C-4F72-BAD1-14A37FFB983F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829CB52F-D46C-4F72-BAD1-14A37FFB983F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829CB52F-D46C-4F72-BAD1-14A37FFB983F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829CB52F-D46C-4F72-BAD1-14A37FFB983F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TestBox.vsmdi
+	EndGlobalSection
+EndGlobal
