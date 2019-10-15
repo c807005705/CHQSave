@@ -49,4 +49,4 @@ F:\20190826-RZ-GemaControl\AxisMovement\LogInfo\obj\x64\Debug\LogInfo.csprojAsse
 F:\20190826-RZ-GemaControl\AxisMovement\LogInfo\obj\x64\Debug\LogInfo.csproj.CopyComplete
 F:\20190826-RZ-GemaControl\AxisMovement\LogInfo\obj\x64\Debug\LogInfo.dll
 F:\20190826-RZ-GemaControl\AxisMovement\LogInfo\obj\x64\Debug\LogInfo.pdb
-E:\gitHubSave\CHQSave\20190826-RZ-GemaControl\AxisMovement\LogInfo\bin\x64\Debug\LogInfo.dll
+F:\20190826-RZ-GemaControl\AxisMovement\LogInfo\obj\x64\Debug\LogInfo.csproj.CoreCompileInputs.cache

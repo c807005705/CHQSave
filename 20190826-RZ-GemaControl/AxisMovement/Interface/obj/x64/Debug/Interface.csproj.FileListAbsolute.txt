@@ -76,3 +76,4 @@ F:\20190826-RZ-GemaControl\AxisMovement\Interface\obj\x64\Debug\Interface.csproj
 F:\20190826-RZ-GemaControl\AxisMovement\Interface\obj\x64\Debug\Interface.csproj.CopyComplete
 F:\20190826-RZ-GemaControl\AxisMovement\Interface\obj\x64\Debug\Interface.dll
 F:\20190826-RZ-GemaControl\AxisMovement\Interface\obj\x64\Debug\Interface.pdb
+F:\20190826-RZ-GemaControl\AxisMovement\Interface\obj\x64\Debug\Interface.csproj.CoreCompileInputs.cache

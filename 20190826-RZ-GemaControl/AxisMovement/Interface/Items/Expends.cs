@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -93,6 +94,33 @@ namespace Interface.Items
         public static byte[] ToBytes(this string msg)
         {
             return System.Text.Encoding.UTF8.GetBytes(msg);
+        }
+        /// <summary>
+        /// 获取枚举类型T中的attribute属性V
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="V"></typeparam>
+        /// <returns></returns>
+        public static IEnumerable<V> GetEnumModeType<T, V>()
+        {
+            List<V> vs = new List<V>();
+            Type t = typeof(T);
+            Array arrays = Enum.GetValues(t);
+            for (int i = 0; i < arrays.LongLength; i++)
+            {
+                T test = (T)arrays.GetValue(i);
+                FieldInfo fieldInfo = test.GetType().GetField(test.ToString());
+                object[] attribArray = fieldInfo.GetCustomAttributes(false);
+                foreach (var item in attribArray)
+                {
+                    if (item is V)
+                    {
+                        vs.Add((V)item);
+                        break;
+                    }
+                }
+            }
+            return vs;
         }
     }
 }
