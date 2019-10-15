@@ -443,4 +443,3 @@ F:\20190826-RZ-GemaControl\AxisMovement\ServerLib\obj\Debug\ServerLib.csprojAsse
 F:\20190826-RZ-GemaControl\AxisMovement\ServerLib\obj\Debug\ServerLib.csproj.CopyComplete
 F:\20190826-RZ-GemaControl\AxisMovement\ServerLib\obj\Debug\ServerLib.dll
 F:\20190826-RZ-GemaControl\AxisMovement\ServerLib\obj\Debug\ServerLib.pdb
-F:\20190826-RZ-GemaControl\AxisMovement\ServerLib\obj\Debug\ServerLib.csproj.CoreCompileInputs.cache

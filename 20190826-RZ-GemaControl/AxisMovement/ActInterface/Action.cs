@@ -26,11 +26,7 @@ namespace ActInterface
         /// 通讯服务
         /// </summary>
         public IServer Server { get; set; }
-        /// <summary>
-        /// 控制器端口
-        /// </summary>
         public IControlDevice ConDevice { get; set; }
-  
 
         public bool IsLink => throw new NotImplementedException();
 
@@ -45,7 +41,222 @@ namespace ActInterface
         }
     
 
-//      
+//        /// <summary>
+//        /// 左下
+//        /// </summary>
+//        public void BottomLeft(int x, int y, int depth)
+//        {
+//            if (ConDevice.GetAxisPosition(Axis.Z) > 18)
+//                ConDevice.PreHeight(Axis.Z, -depth);
+
+
+//            if (ConDevice.GetAxisPosition(Axis.X) == 68 && ConDevice.GetAxisPosition(Axis.Y) == 113)
+//            {
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.SetLineInterMove(10000, -x, -y);
+
+
+//            }
+//            else
+//            {
+//                ConDevice.MoveToPositionXY(68, 113);
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.SetLineInterMove(10000, -x, -y);
+
+//            }
+//        }
+//        /// <summary>
+//        /// 右下
+//        /// </summary>
+//        public void BottomRight(int x, int y, int depth)
+//        {
+//            if (ConDevice.GetAxisPosition(Axis.Z) > 18)
+//                ConDevice.PreHeight(Axis.Z, -depth);
+
+//            if (ConDevice.GetAxisPosition(Axis.X) == 68 && ConDevice.GetAxisPosition(Axis.Y) == 113)
+//            {
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.SetLineInterMove(10000, x, -y);
+
+
+//            }
+//            else
+//            {
+//                ConDevice.MoveToPositionXY(68, 113);
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.SetLineInterMove(10000, x, -y);
+//            }
+//        }
+
+//        /// <summary>
+//        /// 左
+//        /// </summary>
+//        public void Left(double x, double y, int depth)
+//        {
+//            if (ConDevice.GetAxisPosition(Axis.Z) > 18)
+//                ConDevice.PreHeight(Axis.Z, -depth);
+
+//            if (ConDevice.GetAxisPosition(Axis.X) == 68 && ConDevice.GetAxisPosition(Axis.Y) == 113)
+//            {
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.MoveToPositionXY(x, y);
+
+
+//            }
+//            else
+//            {
+//                ConDevice.MoveToPositionXY(68, 113);
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.MoveToPositionXY(x, y);
+
+//            }
+//        }
+//        /// <summary>
+//        /// 右
+//        /// </summary>
+//        public void Right(double x, double y, int depth)
+//        {
+//            if (ConDevice.GetAxisPosition(Axis.Z) > 18)
+//                ConDevice.PreHeight(Axis.Z, -depth);
+
+//            if (ConDevice.GetAxisPosition(Axis.X) == 68 && ConDevice.GetAxisPosition(Axis.Y) == 113)
+//            {
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.MoveToPositionXY(x, y);
+
+
+//            }
+//            else
+//            {
+//                ConDevice.MoveToPositionXY(68, 113);
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.MoveToPositionXY(x, y);
+
+//            }
+//        }
+
+//        /// <summary>
+//        /// 上
+//        /// </summary>
+//        public void Up(double x, double y, int depth)
+//        {
+//            if (ConDevice.GetAxisPosition(Axis.Z) > 1)
+//                ConDevice.PreHeight(Axis.Z, -depth);
+
+//            if (ConDevice.GetAxisPosition(Axis.X) == 68 && ConDevice.GetAxisPosition(Axis.Y) == 113)
+//            {
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.MoveToPositionXY(x, y);
+
+
+//            }
+//            else
+//            {
+//                ConDevice.MoveToPositionXY(68, 113);
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.MoveToPositionXY(x, y);
+
+//            }
+//        }
+//        public void Down(double x, double y, int depth)
+//        {
+//            if (ConDevice.GetAxisPosition(Axis.Z) > 18)
+//                ConDevice.PreHeight(Axis.Z, -depth);
+
+//            if (ConDevice.GetAxisPosition(Axis.X) == 68 && ConDevice.GetAxisPosition(Axis.Y) == 113)
+//            {
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.MoveToPositionXY(x, y);
+
+
+//            }
+//            else
+//            {
+//                ConDevice.MoveToPositionXY(68, 113);
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.MoveToPositionXY(x, y);
+
+//            }
+//        }
+//        /// <summary>
+//        /// 右上
+//        /// </summary>
+//        public void UpperRight(int x, int y, int depth)
+//        {
+//            if (ConDevice.GetAxisPosition(Axis.Z) > 18)
+//                ConDevice.PreHeight(Axis.Z, -depth);
+
+//            if (ConDevice.GetAxisPosition(Axis.X) == 68 && ConDevice.GetAxisPosition(Axis.Y) == 113)
+//            {
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 28);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.SetLineInterMove(10000, x, y);
+
+
+//            }
+//            else
+//            {
+//                ConDevice.MoveToPositionXY(68, 113);
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.SetLineInterMove(10000, x, y);
+
+//            }
+//;
+//        }
+//        /// <summary>
+//        /// 左上
+//        /// </summary>
+//        public void TopLeft(int x, int y, int depth)
+//        {
+//            if (ConDevice.GetAxisPosition(Axis.Z) > 18)
+//                ConDevice.PreHeight(Axis.Z, -depth);
+
+//            if (ConDevice.GetAxisPosition(Axis.X) == 68 && ConDevice.GetAxisPosition(Axis.Y) == 113)
+//            {
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.SetLineInterMove(10000, -x, y);
+
+
+//            }
+//            else
+//            {
+//                ConDevice.MoveToPositionXY(68, 113);
+//                if (ConDevice.GetAxisPosition(Axis.Z) == 0)
+//                    ConDevice.PreHeight(Axis.Z, 12);
+//                ConDevice.PreHeight(Axis.Z, depth);
+//                ConDevice.SetLineInterMove(10000, -x, y);
+
+//            }
+//        }
         /// <summary>
         /// 平A
         /// </summary>

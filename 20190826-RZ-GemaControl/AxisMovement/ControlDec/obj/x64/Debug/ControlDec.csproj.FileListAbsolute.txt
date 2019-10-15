@@ -48,4 +48,3 @@ F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\obj\x64\Debug\ControlDec.cspr
 F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\obj\x64\Debug\ControlDec.csproj.CopyComplete
 F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\obj\x64\Debug\ControlDec.dll
 F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\obj\x64\Debug\ControlDec.pdb
-F:\20190826-RZ-GemaControl\AxisMovement\ControlDec\obj\x64\Debug\ControlDec.csproj.CoreCompileInputs.cache

@@ -34,4 +34,3 @@ F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\obj\Debug\TaskOption.csprojAs
 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\obj\Debug\TaskOption.csproj.CopyComplete
 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\obj\Debug\TaskOption.dll
 F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\obj\Debug\TaskOption.pdb
-F:\20190826-RZ-GemaControl\AxisMovement\TaskOption\obj\Debug\TaskOption.csproj.CoreCompileInputs.cache

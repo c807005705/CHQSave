@@ -124,7 +124,7 @@ namespace ControlDec
             return GetCurrentPosition(axis) / Math.Abs(infos[axis].Scale);
         }
         /// <summary>
-        /// 获取单轴的坐标
+        /// 获取轴的坐标
         /// </summary>
         /// <param name="axis"></param>
         /// <returns></returns>
@@ -141,7 +141,7 @@ namespace ControlDec
             lTSMC.SetClearAllAxisWaring();
         }
         /// <summary>
-        /// 获取控制器所有坐标信息
+        /// 获取控制器坐标信息
         /// </summary>
         /// <returns></returns>
         public string GetPositionInfo()
@@ -226,9 +226,9 @@ namespace ControlDec
         {
             double value = getMMPosition(axis);
             Log.log("正在移动{0}轴" + axis);
-            //if (position >= 0)
+            if (position >= 0)
 
-           // {
+            {
                 switch (axis)
                 {
                     case Axis.U:
@@ -239,17 +239,12 @@ namespace ControlDec
                     case Axis.Y:
                         lTSMC[axis].SetRunDistanceSync((position - getMMPosition(axis)) * (5000 / 16));
                         break;
-                    case Axis.Z:
-                    case Axis.W:
-                        lTSMC[axis].SetRunDistanceSync((position + getMMPosition(axis)) * (5000 /7 ));
-                        break;
-                
-                            }
-           // }
-           // else
-           // {
-                //Log.log("输入坐标错误");
-       // }
+                }
+            }
+            else
+            {
+                Log.log("输入坐标错误");
+        }
         }
 
         /// <summary>
@@ -571,8 +566,8 @@ namespace ControlDec
         public void SetLineInterMove(int speed, int XTargetPosition, int  YTargetPosition)
         {
             LineInterData InstanceName = new LineInterData(speed, 0.01, 0.01);
-            InstanceName.Add(new LineInterItem(Axis.X, XTargetPosition *(5000/25)));
-            InstanceName.Add(new LineInterItem(Axis.Y, YTargetPosition * (5000 / 16)));
+            InstanceName.Add(new LineInterItem(Axis.X, XTargetPosition * 200));
+            InstanceName.Add(new LineInterItem(Axis.Y, YTargetPosition * (3125 / 4)));
             lTSMC.SetLineInter(InstanceName);
             loop();
         }
@@ -605,14 +600,6 @@ namespace ControlDec
         public void ContinuousMotion(Axis axis, Direction direction)
         {
             lTSMC[axis].SetAlwaysRunning(direction);
-        }
-        public void DirMove(double angle)
-        {
-            double xPosition = GetAxisPosition(Axis.X);
-            double yPosition = GetAxisPosition(Axis.Y);
-            double xMovePosition = 70 + 10 * (Math.Cos((Math.PI / 180) * (angle % 360)));
-            double yMovePosition = 124 +10 * (Math.Sin((Math.PI / 180) * (angle % 360)));
-            SetLineInterMove(40000, Convert.ToInt32(xMovePosition - xPosition), Convert.ToInt32(yMovePosition - yPosition));
         }
     }
 }

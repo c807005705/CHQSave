@@ -47,4 +47,3 @@ F:\20190826-RZ-GemaControl\AxisMovement\ParamtersLib\obj\x64\Debug\ParamtersLib.
 F:\20190826-RZ-GemaControl\AxisMovement\ParamtersLib\obj\x64\Debug\ParamtersLib.csproj.CopyComplete
 F:\20190826-RZ-GemaControl\AxisMovement\ParamtersLib\obj\x64\Debug\ParamtersLib.dll
 F:\20190826-RZ-GemaControl\AxisMovement\ParamtersLib\obj\x64\Debug\ParamtersLib.pdb
-F:\20190826-RZ-GemaControl\AxisMovement\ParamtersLib\obj\x64\Debug\ParamtersLib.csproj.CoreCompileInputs.cache

@@ -13,24 +13,17 @@ using System.Windows.Forms;
 namespace RZ_AutoGemaControl
 {
     public partial class Setting : Form
-
     {
-        UserControl UserControl = new UserControl();
-
         ConDevice conDevice = new ConDevice();
-       
         public Setting()
         {
             InitializeComponent();
-            this.FormClosing += Setting_FormClosing;
             
         }
-
-        private void Setting_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            
-        }
-
+        
+       
+       
+       
         private void Confirm_Click(object sender, EventArgs e)
         {
             conDevice.SaveCongigToDevice("");

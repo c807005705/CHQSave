@@ -402,6 +402,7 @@ namespace RZ_AutoGemaControl
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.SpeedDisplay);
             this.groupBox1.Controls.Add(this.SpeedRun);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
@@ -434,7 +435,7 @@ namespace RZ_AutoGemaControl
             // SpeedDisplay
             // 
             this.SpeedDisplay.AutoSize = true;
-            this.SpeedDisplay.Location = new System.Drawing.Point(118, 59);
+            this.SpeedDisplay.Location = new System.Drawing.Point(168, 334);
             this.SpeedDisplay.Name = "SpeedDisplay";
             this.SpeedDisplay.Size = new System.Drawing.Size(76, 16);
             this.SpeedDisplay.TabIndex = 14;
@@ -445,7 +446,7 @@ namespace RZ_AutoGemaControl
             this.SpeedRun.Location = new System.Drawing.Point(12, 322);
             this.SpeedRun.Maximum = 500;
             this.SpeedRun.Name = "SpeedRun";
-            this.SpeedRun.Size = new System.Drawing.Size(226, 45);
+            this.SpeedRun.Size = new System.Drawing.Size(162, 45);
             this.SpeedRun.TabIndex = 24;
             // 
             // label9
@@ -673,7 +674,6 @@ namespace RZ_AutoGemaControl
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.SpeedDisplay);
             this.groupBox3.Controls.Add(this.ZPosition);
             this.groupBox3.Controls.Add(this.YPoistion);
             this.groupBox3.Controls.Add(this.label2);

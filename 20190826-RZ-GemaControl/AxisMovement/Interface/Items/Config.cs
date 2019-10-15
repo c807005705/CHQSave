@@ -165,35 +165,35 @@ namespace Interface.Items
         public Dictionary<Axis, AxisInfo> AxisOtherInfo = new Dictionary<Axis, AxisInfo>()
            {
                 { Config.MovingXAxis,new AxisInfo() {
-                    Direction =Direction.Back, ZeroSpeed = 50000.00,AccTime = 0.01, ZeroMode=ZeroMode.OTTZ,
+                    Direction =Direction.Back, ZeroSpeed = 40000.00,AccTime = 0.01, ZeroMode=ZeroMode.OTTZ,
                     DecTime =0.01,RunSpeed = 40000, Name = "方向轴X移动",Scale = 5000 / 25 }
                 },
                 {
                    Config.MovingYAxis,new AxisInfo(){
-                    Direction =Direction.Back,ZeroSpeed=50000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
+                    Direction =Direction.Back,ZeroSpeed=40000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
                     DecTime =0.01, RunSpeed=40000,Name="方向轴Y移动",Scale= 5000 / 16}
                 },
                 {
                     Config.MovingZAxis,new AxisInfo(){
-                        Direction =Direction.Forward,ZeroSpeed=60000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
-                        DecTime =0.01,RunSpeed=60000.00,Name="方向轴Z移动",Scale= 5000 / 7}
+                        Direction =Direction.Forward,ZeroSpeed=50000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
+                        DecTime =0.01,RunSpeed=50000.00,Name="方向轴Z移动",Scale= 5000 / 7}
                 },
                 {
                     Config.SkillReleaseUAxis,new AxisInfo()  {
-                        Direction=Direction.Back,ZeroSpeed=50000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
-                        DecTime =0.01,RunSpeed=50000.0,Name="技能释放轴U移动",Scale= 5000 / 25
+                        Direction=Direction.Back,ZeroSpeed=40000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
+                        DecTime =0.01,RunSpeed=40000.0,Name="技能释放轴U移动",Scale= 5000 / 25
                     }
                 },
                 {
                     Config.SkillReleaseVAxis,new AxisInfo(){
-                        Direction=Direction.Back,ZeroSpeed=50000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
-                        DecTime=0.01,RunSpeed=50000.0,Name ="技能释放V轴",Scale= 5000 / 16
+                        Direction=Direction.Back,ZeroSpeed=40000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
+                        DecTime=0.01,RunSpeed=40000.0,Name ="技能释放V轴",Scale= 5000 / 16
                     }
                 },
                 {
                     Config.SkillReleaseWAxis,new AxisInfo(){
-                        Direction=Direction.Forward,ZeroSpeed=60000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
-                        DecTime=0.01,RunSpeed=60000.0,Name ="技能释放W轴",Scale= 5000 / 7
+                        Direction=Direction.Forward,ZeroSpeed=50000.0,AccTime=0.01,ZeroMode=ZeroMode.OTTZ,
+                        DecTime=0.01,RunSpeed=50000.0,Name ="技能释放W轴",Scale= 5000 / 7
                     }
 
                  }
