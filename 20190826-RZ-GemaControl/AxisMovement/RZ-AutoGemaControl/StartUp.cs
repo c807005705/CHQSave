@@ -43,7 +43,9 @@ namespace RZ_AutoGemaControl
             Service.InjectionSingleInstance<IWindow> (new GameConsole());
             Service.InjectionSingleInstance<IServer>(new Server());
             Service.InjectionSingleInstance<ITaskInoke, TaskFormat>();
-            //Service.InjectionSingleInstance<IActionInterface, Action>();
+            Service.InjectionSingleInstance<ICamera, CameraLibs.Camera>();
+            //Service.InjectionSingleInstance<ICamera, CameraLibs.Performance>();
+           // Service.InjectionSingleInstance<IActionInterface, ActInterface.Action>();
             Service.start();
         }
         public static void ModifyStaticParamters(string[] argvs)

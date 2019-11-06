@@ -33,11 +33,11 @@
             this.ServerIP = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.DiscCenterX = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.ImageRoute = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -77,6 +77,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
+            this.DiscCenterY = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,12 +125,12 @@
             this.label10.TabIndex = 25;
             this.label10.Text = "轮盘坐标";
             // 
-            // textBox3
+            // DiscCenterX
             // 
-            this.textBox3.Location = new System.Drawing.Point(112, 42);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 21);
-            this.textBox3.TabIndex = 26;
+            this.DiscCenterX.Location = new System.Drawing.Point(112, 42);
+            this.DiscCenterX.Name = "DiscCenterX";
+            this.DiscCenterX.Size = new System.Drawing.Size(50, 21);
+            this.DiscCenterX.TabIndex = 26;
             // 
             // label11
             // 
@@ -156,12 +157,12 @@
             this.label12.TabIndex = 29;
             this.label12.Text = "图片保存路径";
             // 
-            // textBox5
+            // ImageRoute
             // 
-            this.textBox5.Location = new System.Drawing.Point(112, 285);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 21);
-            this.textBox5.TabIndex = 30;
+            this.ImageRoute.Location = new System.Drawing.Point(112, 285);
+            this.ImageRoute.Name = "ImageRoute";
+            this.ImageRoute.Size = new System.Drawing.Size(100, 21);
+            this.ImageRoute.TabIndex = 30;
             // 
             // textBox6
             // 
@@ -430,6 +431,7 @@
             this.button1.TabIndex = 65;
             this.button1.Text = "连接";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -515,11 +517,19 @@
             this.label22.TabIndex = 68;
             this.label22.Text = "技能1加点";
             // 
+            // DiscCenterY
+            // 
+            this.DiscCenterY.Location = new System.Drawing.Point(162, 42);
+            this.DiscCenterY.Name = "DiscCenterY";
+            this.DiscCenterY.Size = new System.Drawing.Size(50, 21);
+            this.DiscCenterY.TabIndex = 74;
+            // 
             // Setting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 441);
+            this.Controls.Add(this.DiscCenterY);
             this.Controls.Add(this.textBox17);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.textBox18);
@@ -539,11 +549,11 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.ImageRoute);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.DiscCenterX);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ServerIP);
@@ -551,6 +561,7 @@
             this.Controls.Add(this.confirm);
             this.Name = "Setting";
             this.Text = "设置";
+            this.Load += new System.EventHandler(this.Setting_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -564,11 +575,11 @@
         private System.Windows.Forms.TextBox ServerIP;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox DiscCenterX;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox ImageRoute;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox8;
@@ -608,5 +619,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox DiscCenterY;
     }
 }

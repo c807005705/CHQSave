@@ -1,0 +1,325 @@
+[2019/10/17 8:24:01 , Normal] ->  
+ [2019/10/17 8:25:24 , Normal] ->  
+ [2019/10/17 8:56:07 , Normal] ->  
+ [2019/10/17 8:56:54 , Normal] ->  
+ [2019/10/17 8:57:58 , Normal] ->  
+ [2019/10/17 9:24:16 , Normal] ->  
+ [2019/10/17 9:33:19 , Normal] ->  
+ [2019/10/17 9:38:18 , Normal] ->  
+ [2019/10/17 9:40:50 , Normal] ->  
+ [2019/10/17 9:41:03 , Normal] ->  
+ [2019/10/17 9:42:28 , Normal] ->  
+ [2019/10/17 9:43:17 , Normal] ->  
+ [2019/10/17 9:44:22 , Normal] ->  
+ [2019/10/17 9:44:33 , Erro] -> 程序运行错误:System.DllNotFoundException: 无法加载 DLL“PylonC_v5_2.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+   在 PylonC.NET.GenApi.GenApiGetLastErrorMessageBstr(String& pString)
+   在 PylonC.NET.GenApi.GetLastErrorMessage()
+   在 BslCamera.BCamera.get_LastError() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\BslCamera\BslCamera\BslCamera\BCamera.cs:行号 76
+   在 BslCamera.BCamera.Open(Int32 index) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\BslCamera\BslCamera\BslCamera\BCamera.cs:行号 177
+   在 CameraLibs.Performance.Open() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\CameraLibs\Performance.cs:行号 62
+   在 RZ_AutoGemaControl.GameConsole.pictureBox11_Click(Object sender, EventArgs e) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 545
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 354
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 9:45:45 , Normal] ->  
+ [2019/10/17 9:45:48 , Erro] -> 程序运行错误:System.Runtime.InteropServices.COMException (0xC3000001): 异常来自 HRESULT:0xC3000001
+   在 PylonC.NET.Pylon.PylonDeviceExecuteCommandFeature(IntPtr hDev, String pName)
+   在 BslCamera.BCamera.CleanUpGrab() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\BslCamera\BslCamera\BslCamera\BCamera.cs:行号 384
+   在 BslCamera.BCamera.Snap() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\BslCamera\BslCamera\BslCamera\BCamera.cs:行号 288
+   在 CameraLibs.Performance.GetCurrentPictrue() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\CameraLibs\Performance.cs:行号 43
+   在 RZ_AutoGemaControl.GameConsole.pictureBox11_Click(Object sender, EventArgs e) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 546
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 354
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 9:50:04 , Normal] ->  
+ [2019/10/17 9:50:17 , Erro] -> 程序运行错误:System.Runtime.InteropServices.COMException (0xC3000001): 异常来自 HRESULT:0xC3000001
+   在 PylonC.NET.Pylon.PylonDeviceExecuteCommandFeature(IntPtr hDev, String pName)
+   在 BslCamera.BCamera.CleanUpGrab() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\BslCamera\BslCamera\BslCamera\BCamera.cs:行号 384
+   在 BslCamera.BCamera.Snap() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\BslCamera\BslCamera\BslCamera\BCamera.cs:行号 288
+   在 CameraLibs.Performance.GetCurrentPictrue() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\CameraLibs\Performance.cs:行号 42
+   在 RZ_AutoGemaControl.GameConsole.pictureBox11_Click(Object sender, EventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 546
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 354
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 9:52:47 , Normal] ->  
+ [2019/10/17 9:54:47 , Normal] ->  
+ [2019/10/17 9:57:50 , Normal] ->  
+ [2019/10/17 10:00:36 , Normal] ->  
+ [2019/10/17 11:08:40 , Normal] ->  
+ [2019/10/17 12:58:34 , Normal] ->  
+ [2019/10/17 12:59:22 , Normal] ->  
+ [2019/10/17 13:02:15 , Normal] ->  
+ [2019/10/17 13:02:43 , Normal] ->  
+ [2019/10/17 13:03:55 , Normal] ->  
+ [2019/10/17 13:05:18 , Normal] ->  
+ [2019/10/17 13:08:10 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 434
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 354
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 13:08:20 , Normal] ->  
+ [2019/10/17 13:20:54 , Normal] ->  
+ [2019/10/17 13:21:13 , Normal] ->  
+ [2019/10/17 13:21:54 , Normal] ->  
+ [2019/10/17 13:23:19 , Normal] ->  
+ [2019/10/17 13:26:47 , Normal] ->  
+ [2019/10/17 13:28:42 , Normal] ->  
+ [2019/10/17 13:30:03 , Normal] ->  
+ [2019/10/17 13:30:24 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 434
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 354
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 13:31:04 , Normal] ->  
+ [2019/10/17 13:31:13 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 434
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 354
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 13:32:16 , Normal] ->  
+ [2019/10/17 13:33:23 , Normal] ->  
+ [2019/10/17 13:38:28 , Normal] ->  
+ [2019/10/17 13:38:58 , Normal] ->  
+ [2019/10/17 13:39:05 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 434
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 354
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 13:39:38 , Normal] ->  
+ [2019/10/17 13:49:51 , Normal] ->  
+ [2019/10/17 13:50:59 , Normal] ->  
+ [2019/10/17 13:52:08 , Normal] ->  
+ [2019/10/17 13:52:12 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 435
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 355
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 13:52:17 , Normal] ->  
+ [2019/10/17 13:53:16 , Normal] ->  
+ [2019/10/17 13:53:21 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 435
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 355
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 13:56:17 , Normal] ->  
+ [2019/10/17 13:58:21 , Normal] ->  
+ [2019/10/17 13:58:30 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 435
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 355
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 13:58:50 , Normal] ->  
+ [2019/10/17 13:59:30 , Normal] ->  
+ [2019/10/17 14:00:38 , Normal] ->  
+ [2019/10/17 14:01:25 , Normal] ->  
+ [2019/10/17 14:01:51 , Normal] ->  
+ [2019/10/17 14:02:19 , Normal] ->  
+ [2019/10/17 14:03:03 , Normal] ->  
+ [2019/10/17 14:03:54 , Normal] ->  
+ [2019/10/17 14:06:59 , Normal] ->  
+ [2019/10/17 14:07:32 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 435
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 355
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 14:08:06 , Normal] ->  
+ [2019/10/17 14:10:54 , Normal] ->  
+ [2019/10/17 14:13:17 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 435
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 355
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 14:13:51 , Normal] ->  
+ [2019/10/17 14:14:31 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 435
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 355
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 14:33:04 , Normal] ->  
+ [2019/10/17 14:33:06 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 435
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 355
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/17 14:33:49 , Normal] ->  
+ [2019/10/17 14:59:56 , Normal] ->  
+ 

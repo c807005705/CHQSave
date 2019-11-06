@@ -12,7 +12,12 @@ namespace Interface.Interface
     /// 控制器接口
     /// </summary>
     public interface IControlDevice
+
     {
+        /// <summary>
+        /// 断开控制器连接
+        /// </summary>
+        void Stop();
         /// <summary>
         /// 连接
         /// </summary>
@@ -104,7 +109,7 @@ namespace Interface.Interface
         /// 是否连接
         /// </summary>
         /// <returns></returns>
-        bool IsLink();
+        bool IsLink { get; }
         /// <summary>
         /// 轴移动
         /// </summary>
@@ -114,8 +119,6 @@ namespace Interface.Interface
         /// 清除坐标
         /// </summary>
         void ClearPiont(Axis axis);
-
-        void moveX();
         /// <summary>
         /// 技能点击
         /// </summary>

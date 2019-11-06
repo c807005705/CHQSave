@@ -1,0 +1,10 @@
+E:\workspace\donet\BslCamera\BslCamera\BslCamera\bin\Debug\BslCamera.xml
+E:\workspace\donet\BslCamera\BslCamera\BslCamera\bin\Debug\BslCamera.dll
+E:\workspace\donet\BslCamera\BslCamera\BslCamera\bin\Debug\BslCamera.pdb
+E:\workspace\donet\BslCamera\BslCamera\BslCamera\bin\Debug\PylonC.NET.dll
+E:\workspace\donet\BslCamera\BslCamera\BslCamera\bin\Debug\PylonC.NET.xml
+E:\workspace\donet\BslCamera\BslCamera\BslCamera\obj\Debug\BslCamera.csproj.CoreCompileInputs.cache
+E:\workspace\donet\BslCamera\BslCamera\BslCamera\obj\Debug\BslCamera.csproj.CopyComplete
+E:\workspace\donet\BslCamera\BslCamera\BslCamera\obj\Debug\BslCamera.dll
+E:\workspace\donet\BslCamera\BslCamera\BslCamera\obj\Debug\BslCamera.pdb
+E:\workspace\donet\BslCamera\BslCamera\BslCamera\obj\Debug\BslCamera.csprojAssemblyReference.cache

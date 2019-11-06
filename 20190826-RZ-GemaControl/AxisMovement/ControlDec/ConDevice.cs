@@ -36,9 +36,9 @@ namespace ControlDec
         /// 所有轴向归零
         /// </summary>
         public void AllToZero()
-        {
+        {  
             Log.log("开始回零操作，停止任何操作！");
-            lTSMC.StopAll();
+            lTSMC.StopAll();           
             Log.log("设置轴向归零参数");
             AxisRunToZero(Axis.Z);
             AxisRunToZero(Axis.W);
@@ -50,50 +50,25 @@ namespace ControlDec
             AxisRunToZero(Axis.V);        
             loop();
             Log.log("水平轴向归零成功");
-            lTSMC.AllToClearPositionZero();
-            Log.log("所有坐标清零成功");
-
+            //lTSMC.AllToClearPositionZero();
+           // Log.log("所有坐标清零成功");
         }
         /// <summary>
         /// 单轴归零
         /// </summary>
         /// <param name="axis"></param>
         public void AxisRunToZero(Axis axis)
-        {
-            double RetZeroSpeed = infos[axis].RunSpeed;
-            Direction direction = infos[axis].Direction;
+        {  
             try
             {
-                switch (axis)
-                {
-                    case Axis.X:
-                        lTSMC[axis].SetStartFindZeroParameters(RetZeroSpeed, direction);
-                        break;
-                    case Axis.Y:
-                        lTSMC[axis].SetStartFindZeroParameters(RetZeroSpeed, direction);
-                        break;
-                    case Axis.Z:
-                        lTSMC[axis].SetStartFindZeroParameters(RetZeroSpeed, direction);
-                        break;
-                    case Axis.U:
-                        lTSMC[axis].SetStartFindZeroParameters(RetZeroSpeed, direction);
-                        break;
-                    case Axis.V:
-                        lTSMC[axis].SetStartFindZeroParameters(RetZeroSpeed, direction);
-                        break;
-                    case Axis.W:
-                        lTSMC[axis].SetStartFindZeroParameters(RetZeroSpeed, direction);
-                        break;
-                }
+                lTSMC[axis].SetStartFindZeroParameters(infos[axis].RunSpeed, infos[axis].Direction);
                 loop();
-                ClearPiont(axis);
+               // ClearPiont(axis);
             }
             catch (Exception ex)
-
             {
                 Log.error("回零失败" + ex);
             }
-
         }
         /// <summary>
         /// 等待
@@ -124,7 +99,7 @@ namespace ControlDec
             return GetCurrentPosition(axis) / Math.Abs(infos[axis].Scale);
         }
         /// <summary>
-        /// 获取单轴的坐标
+        /// 获取轴的坐标
         /// </summary>
         /// <param name="axis"></param>
         /// <returns></returns>
@@ -141,7 +116,7 @@ namespace ControlDec
             lTSMC.SetClearAllAxisWaring();
         }
         /// <summary>
-        /// 获取控制器所有坐标信息
+        /// 获取控制器坐标信息
         /// </summary>
         /// <returns></returns>
         public string GetPositionInfo()
@@ -160,7 +135,7 @@ namespace ControlDec
         /// 是否连接
         /// </summary>
         /// <returns></returns>
-        public bool IsLink() => lTSMC.IsLink;
+        public bool IsLink => lTSMC.IsLink;
         /// <summary>
         /// 是否正在移动
         /// </summary>
@@ -347,21 +322,23 @@ namespace ControlDec
         {
             if (syn)
             {
+                //异步移动
                 if (direction == Direction.Forward)
                     lTSMC[axis].SetRunDistanceAsync(distance);
                 else
                     lTSMC[axis].SetRunDistanceAsync(-distance);
-                loop();
+              
             }
             else
             {
+                //同步移动
                 if (direction == Direction.Forward)
                     lTSMC[axis].SetRunDistanceSync(distance);
                 else
                     lTSMC[axis].SetRunDistanceSync(-distance);
-                loop();
+           
             }
-
+            loop();
         }
            
         /// <summary>
@@ -373,160 +350,14 @@ namespace ControlDec
             lTSMC[axis].PositionZeroClear();
         }
 
-        public void moveX()
-        {
-            //LineInterData lineInterData = new LineInterData(10000, 0.01, 0.01);
-
-            //lineInterData.Add(new LineInterItem(Axis.X,10000 ));
-
-            //lineInterData.Add(new LineInterItem(Axis.Y, 15000));
-
-            //lTSMC.SetLineInter(lineInterData);
-
-
-            //MoveX(75 * (5000 / 25), true, Direction.Forward);
-            //MoveY(115 * (5000 / 16), true, Direction.Forward);
-            //loop();
-            //MoveZ(10 * (5000 / 7), false, Direction.Back);
-            Task<bool> xisover = lTSMC[Axis.X].SetRunDistanceAsync(68 * (5000 / 25));
-            Task<bool> yisover = lTSMC[Axis.Y].SetRunDistanceAsync(113 * (5000 / 16));
-            Task<bool> Uisover = lTSMC[Axis.U].SetRunDistanceAsync(59 * (5000 / 25));
-            Task<bool> Visover = lTSMC[Axis.V].SetRunDistanceAsync(145 * (5000 / 16));
-            xisover.Wait();//等待
-            yisover.Wait();//等待
-            Uisover.Wait();
-            Visover.Wait();
-           
-            lTSMC[Axis.X].SetRunDistance(-(9 * (5000 / 25)));
-            lTSMC[Axis.Y].SetRunDistance(27 * (5000 / 16));
-            //MoveClick();
-            lTSMC[Axis.X].SetRunDistance((9 * (5000 / 25)));
-            lTSMC[Axis.Y].SetRunDistance(-(27 * (5000 / 16)));
-            loop();
-            //lTSMC[Axis.Z].SetRunDistanceSync(-(12 * (5000 / 7)));  
-            lTSMC[Axis.W].SetRunDistanceSync(-(12 * (5000 / 7)));           
-            lTSMC[Axis.Z].SetRunDistanceSync(-(6 * (5000 / 7)));
-             lTSMC[Axis.U].SetRunDistanceSync(25 * (5000 / 25));
-            lTSMC[Axis.V].SetRunDistanceSync(-4 * (5000 / 16));
-            ContinuousClick();
-            lTSMC[Axis.U].SetRunDistanceSync(-25 * (5000 / 25));
-            lTSMC[Axis.V].SetRunDistanceSync(4 * (5000 / 16));
-            
-            LineInterData lineInterData = new LineInterData(10000, 0.01, 0.01);
-            lineInterData.Add(new LineInterItem(Axis.X, 5 * (5000 / 25)));
-            lineInterData.Add(new LineInterItem(Axis.Y, 8 * (5000 / 16)));
-            lTSMC.SetLineInter(lineInterData);
-            loop();
-            moveThread();
-            timeInterval();
-        }
-        /// <summary>
-        ///z点击
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        public void ContinuousClick()
-        {
-            lTSMC[Axis.W].SetRunDistanceSync(-(9 * (5000 / 7)));
-            lTSMC[Axis.W].SetRunDistanceSync((9 * (5000 / 7)));
-
-        }
-        //public void ConCick()
-        //{
-        //    conCick = new Thread(timeInterval)
-        //    {
-
-        //        IsBackground = true 
-        //    };
-        //    conCick.Start();
-        //}
+       
 
         Thread thread = null;
         Thread Thread1 = null;
-        public void moveThread()
-        {
-            System.Timers.Timer timer1 = new System.Timers.Timer();
-            timer1.Enabled = true;
-            timer1.Interval = 14000;//执行间隔时间
-            timer1.Start();
-            timer1.Elapsed += new ElapsedEventHandler(Moveclick);
-            //Thread1 = new Thread(Moveclick);
-            //Thread1.IsBackground = true;
-            //Thread1.Start();
-        }
-        /// <summary>
-        /// 打圈移动
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Moveclick(object sender, ElapsedEventArgs e)
-        {
-            //while (true)
-            //{
-            for (int i = 0; i < 8; i++)
-            {
-                lTSMC[Axis.X].RunSpeed = 10000;
-                lTSMC[Axis.Y].RunSpeed = 10000;
-                lTSMC[Axis.X].SetRunDistanceSync(-15 * (5000 / 25));
-                lTSMC[Axis.Y].SetRunDistanceSync(-15 * (5000 / 16));
-                lTSMC[Axis.X].SetRunDistanceSync(15 * (5000 / 25));
-                lTSMC[Axis.Y].SetRunDistanceSync(15 * (5000 / 16));
-            }
+       
+     
 
-           // }
-        }
-        /// <summary>
-        /// 循环技能点击线程
-        /// </summary>
-            public void timeInterval()
-        {
-            //System.Timers.Timer timer1 = new System.Timers.Timer();
-            //timer1.Enabled = true;
-            //timer1.Interval = 7000;//执行间隔时间
-            //timer1.Start();
-            //timer1.Elapsed += new ElapsedEventHandler(click);
-            thread = new Thread(click);
-            thread.IsBackground = true;
-            thread.Start();
-            
-        }
-
-        private void click(/*object sender, ElapsedEventArgs e*/)
-        {
-
-            try
-            {
-                Thread.Sleep(14000);
-                while (true)
-                {
-                    
-                    for (int j = 0; j < 2; j++)
-                    {
-                        for (int i = 0; i < 20; i++)
-                        {
-                            lTSMC[Axis.W].SetRunDistanceSync(-(9 * (5000 / 7)));
-                            lTSMC[Axis.W].SetRunDistanceSync((9 * (5000 / 7)));
-                        }
-                        lTSMC[Axis.U].SetRunDistanceSync(21 * (5000 / 25));
-                        lTSMC[Axis.W].SetRunDistanceSync(-(9 * (5000 / 7)));
-                        lTSMC[Axis.W].SetRunDistanceSync((9 * (5000 / 7)));
-                        lTSMC[Axis.U].SetRunDistanceSync(-21 * (5000 / 25));
-                    }
-                    lTSMC[Axis.U].SetRunDistanceSync(13 * (5000 / 25));
-                    lTSMC[Axis.V].SetRunDistanceSync(-12 * (5000 / 16));
-                    lTSMC[Axis.W].SetRunDistanceSync(-(9 * (5000 / 7)));
-                    lTSMC[Axis.W].SetRunDistanceSync((9 * (5000 / 7)));
-                    lTSMC[Axis.U].SetRunDistanceSync(-13 * (5000 / 25));
-                    lTSMC[Axis.V].SetRunDistanceSync(12 * (5000 / 16));
-
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString() + "操作异常");
-            }
-
-        }
+         
         /// <summary>
         /// 方向轴点击
         /// </summary>
@@ -549,18 +380,6 @@ namespace ControlDec
             lTSMC[Axis.W].SetRunDistanceSync(-depth * (5000 / 7));
             lTSMC[Axis.W].SetRunDistanceSync(depth * (5000 / 7));
         }
-        ///// <summary>
-        ///// 方向轴点击
-        ///// </summary>
-        ///// <param name="Speed"></param>
-        ///// <param name="depth"></param>
-        //public void MoveClick(double Speed, int depth)
-        //{
-        //    lTSMC[Axis.Z].RunSpeed = Speed;
-        //    //lTSMC[Axis.Z].SetRunDistanceSync(-12);
-        //    lTSMC[Axis.Z].SetRunDistanceSync(-depth);
-        //    lTSMC[Axis.Z].SetRunDistanceSync(depth);
-        //}
         /// <summary>
         /// 移动轴直线补偿
         /// </summary>
@@ -613,6 +432,15 @@ namespace ControlDec
             double xMovePosition = 70 + 10 * (Math.Cos((Math.PI / 180) * (angle % 360)));
             double yMovePosition = 124 +10 * (Math.Sin((Math.PI / 180) * (angle % 360)));
             SetLineInterMove(40000, Convert.ToInt32(xMovePosition - xPosition), Convert.ToInt32(yMovePosition - yPosition));
+        }
+        /// <summary>
+        /// 断开控制器连接
+        /// </summary>
+        public void Stop()
+        {
+            lTSMC.Close();
+            lTSMC.StopAll();
+
         }
     }
 }

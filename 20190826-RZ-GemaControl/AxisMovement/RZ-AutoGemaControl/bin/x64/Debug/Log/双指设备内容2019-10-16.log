@@ -1,0 +1,12 @@
+[2019/10/16 14:54:16 , Normal] -> 设备初始化失败！内容Device_Link_LTSMC.LSTMCException: 错误信息:错误Cannot_be_connected : 无法连接
+, 错误编码:8 , 错误函数:LinkDevice, 错误轴向:总控制
+   在 Device_Link_LTSMC.Device_Net_LSTMC.CallBack(String optionFunction, Int16[] erroCodes)
+   在 Device_Link_LTSMC.Device_Net_LSTMC.LinkDevice()
+   在 ControlDec.ConDevice.Link(Dictionary`2 infos) 位置 F:\新建文件夹\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 185 
+ [2019/10/16 14:54:16 , Normal] -> 启动服务器成功 
+ [2019/10/16 14:54:16 , Normal] -> 连接错误System.ArgumentNullException: 值不能为 null。
+参数名: PortName
+   在 System.IO.Ports.SerialPort.set_PortName(String value)
+   在 ControlLib.ControlCom.Open() 位置 F:\新建文件夹\20191014-RZ-GemaControl\AxisMovement\ControlLib\ControlCom.cs:行号 93
+   在 TaskOption.TaskFormat.Link(String ip, Int32 port) 位置 F:\新建文件夹\20191014-RZ-GemaControl\AxisMovement\TaskOption\TaskFormat.cs:行号 204 
+ 

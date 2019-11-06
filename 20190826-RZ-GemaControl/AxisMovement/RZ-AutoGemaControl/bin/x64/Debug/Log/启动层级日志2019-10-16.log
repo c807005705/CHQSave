@@ -1,0 +1,118 @@
+[2019/10/16 12:23:52 , Normal] ->  
+ [2019/10/16 15:58:07 , Normal] ->  
+ [2019/10/16 15:58:09 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RZ_AutoGemaControl.GameConsole.pictureBox11_Click(Object sender, EventArgs e) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 545
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 354
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 74 
+ [2019/10/16 15:58:30 , Normal] ->  
+ [2019/10/16 15:59:12 , Normal] ->  
+ [2019/10/16 16:00:13 , Normal] ->  
+ [2019/10/16 16:00:42 , Normal] ->  
+ [2019/10/16 16:00:58 , Normal] ->  
+ [2019/10/16 16:01:00 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RZ_AutoGemaControl.GameConsole.pictureBox11_Click(Object sender, EventArgs e) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 545
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 354
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 74 
+ [2019/10/16 16:02:42 , Normal] ->  
+ [2019/10/16 16:02:42 , Erro] -> 程序运行错误:Autofac.Core.DependencyResolutionException: An exception was thrown while activating Interface.Interface.ICamera. ---> Autofac.Core.Activators.Reflection.NoConstructorsFoundException: No accessible constructors were found for the type 'Interface.Interface.ICamera'.
+   在 Autofac.Core.Activators.Reflection.DefaultConstructorFinder.GetDefaultPublicConstructors(Type type)
+   在 Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   在 Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.Core.Activators.Reflection.AutowiringPropertyInjector.InjectProperties(IComponentContext context, Object instance, IPropertySelector propertySelector, IEnumerable`1 parameters)
+   在 Autofac.Core.Registration.ComponentRegistration.RaiseActivating(IComponentContext context, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   在 Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context, IEnumerable`1 parameters)
+   在 RZ_AutoGemaControl.services.AutoServiceImpl.Resolve[T]() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\services\AutoServiceImpl.cs:行号 59
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 73 
+ [2019/10/16 16:02:51 , Normal] ->  
+ [2019/10/16 16:02:51 , Erro] -> 程序运行错误:Autofac.Core.DependencyResolutionException: An exception was thrown while activating Interface.Interface.ICamera. ---> Autofac.Core.Activators.Reflection.NoConstructorsFoundException: No accessible constructors were found for the type 'Interface.Interface.ICamera'.
+   在 Autofac.Core.Activators.Reflection.DefaultConstructorFinder.GetDefaultPublicConstructors(Type type)
+   在 Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   在 Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.Core.Activators.Reflection.AutowiringPropertyInjector.InjectProperties(IComponentContext context, Object instance, IPropertySelector propertySelector, IEnumerable`1 parameters)
+   在 Autofac.Core.Registration.ComponentRegistration.RaiseActivating(IComponentContext context, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   在 Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context, IEnumerable`1 parameters)
+   在 RZ_AutoGemaControl.services.AutoServiceImpl.Resolve[T]() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\services\AutoServiceImpl.cs:行号 59
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 73 
+ [2019/10/16 16:12:19 , Normal] ->  
+ [2019/10/16 16:12:19 , Erro] -> 程序运行错误:Autofac.Core.DependencyResolutionException: An exception was thrown while activating Interface.Interface.ICamera. ---> Autofac.Core.Activators.Reflection.NoConstructorsFoundException: No accessible constructors were found for the type 'Interface.Interface.ICamera'.
+   在 Autofac.Core.Activators.Reflection.DefaultConstructorFinder.GetDefaultPublicConstructors(Type type)
+   在 Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   在 Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.Core.Activators.Reflection.AutowiringPropertyInjector.InjectProperties(IComponentContext context, Object instance, IPropertySelector propertySelector, IEnumerable`1 parameters)
+   在 Autofac.Core.Registration.ComponentRegistration.RaiseActivating(IComponentContext context, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   在 Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   在 Autofac.Core.Resolving.InstanceLookup.Execute()
+   在 Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   在 Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   在 Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context, IEnumerable`1 parameters)
+   在 RZ_AutoGemaControl.services.AutoServiceImpl.Resolve[T]() 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\services\AutoServiceImpl.cs:行号 59
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 E:\gitHubSave\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 73 
+ [2019/10/16 16:15:48 , Normal] ->  
+ [2019/10/16 16:18:21 , Normal] ->  
+ [2019/10/16 16:18:53 , Normal] ->  
+ [2019/10/16 16:20:14 , Normal] ->  
+ [2019/10/16 16:20:42 , Normal] ->  
+ [2019/10/16 16:23:03 , Normal] ->  
+ [2019/10/16 16:23:22 , Normal] ->  
+ [2019/10/16 16:25:17 , Normal] ->  
+ [2019/10/16 16:30:06 , Normal] ->  
+ [2019/10/16 16:30:36 , Normal] ->  
+ [2019/10/16 16:33:08 , Normal] ->  
+ [2019/10/16 16:35:52 , Normal] ->  
+ [2019/10/16 16:36:15 , Normal] ->  
+ [2019/10/16 16:36:49 , Normal] ->  
+ [2019/10/16 16:38:33 , Normal] ->  
+ 

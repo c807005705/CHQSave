@@ -13,6 +13,14 @@ namespace TaskOption
     /// </summary>
    partial class TaskFormat
     {
+        private void DirMove(ServerRevItem obj)
+        {
+            double xPosition = ControlDevice.GetAxisPosition(Axis.X);
+            double yPosition = ControlDevice.GetAxisPosition(Axis.Y);
+            double xMovePosition = 68 + config.UserConfig.CircleRadius * (Math.Cos((Math.PI / 180) * obj.GetValue<int>("angle")));
+            double yMovePosition = 68 + config.UserConfig.CircleRadius * (Math.Sin((Math.PI / 180) * obj.GetValue<int>("angle")));
+            ControlDevice.SetLineInterMove(2000, Convert.ToInt32(xPosition - xMovePosition), Convert.ToInt32(yPosition - yMovePosition));
+        }
         private void FlatA(ServerRevItem revItem)
         {
             ControlDevice.MoveToPositionUV(59, 145);

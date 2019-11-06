@@ -1,0 +1,54 @@
+[2019/10/23 13:26:08 , Normal] ->  
+ [2019/10/23 13:26:49 , Normal] ->  
+ [2019/10/23 13:28:30 , Normal] ->  
+ [2019/10/23 13:29:41 , Normal] ->  
+ [2019/10/23 13:29:52 , Normal] ->  
+ [2019/10/23 13:29:59 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RZ_AutoGemaControl.Setting.Confirm_Click(Object sender, EventArgs e) 位置 F:\新建文件夹\20191022-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\Setting.cs:行号 38
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.Setting_Click(Object sender, EventArgs e) 位置 F:\新建文件夹\20191022-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 175
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 F:\新建文件夹\20191022-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 365
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 F:\新建文件夹\20191022-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/23 13:31:38 , Normal] ->  
+ [2019/10/23 13:35:30 , Normal] ->  
+ [2019/10/23 13:36:01 , Normal] ->  
+ [2019/10/23 13:36:19 , Normal] ->  
+ [2019/10/23 13:36:43 , Normal] ->  
+ [2019/10/23 13:37:22 , Normal] ->  
+ [2019/10/23 13:38:14 , Normal] ->  
+ [2019/10/23 13:40:41 , Normal] ->  
+ [2019/10/23 13:49:21 , Normal] ->  
+ [2019/10/23 14:09:09 , Normal] ->  
+ [2019/10/23 14:27:43 , Normal] ->  
+ [2019/10/23 14:28:46 , Normal] ->  
+ [2019/10/23 14:29:21 , Normal] ->  
+ [2019/10/23 14:30:26 , Normal] ->  
+ [2019/10/23 15:34:54 , Normal] ->  
+ 

@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BslCamera</name>
+    </assembly>
+    <members>
+        <member name="T:BslCamera.BCamera">
+            <summary>
+            bsl相机类
+            </summary>
+        </member>
+        <member name="F:BslCamera.BCamera.m_hConverter">
+            <summary>
+            转换器
+            </summary>
+        </member>
+        <member name="F:BslCamera.BCamera.m_convertedBuffers">
+            <summary>
+            转换器的buffer
+            </summary>
+        </member>
+        <member name="F:BslCamera.BCamera.m_hDevice">
+            <summary>
+            相机设备句柄
+            </summary>
+        </member>
+        <member name="F:BslCamera.BCamera.m_hGrabber">
+            <summary>
+            采集句柄
+            </summary>
+        </member>
+        <member name="F:BslCamera.BCamera.m_hRemovalCallback">
+            <summary>
+            移除回调
+            </summary>
+        </member>
+        <member name="F:BslCamera.BCamera.m_hWait">
+            <summary>
+            等待
+            </summary>
+        </member>
+        <member name="F:BslCamera.BCamera.m_buffers">
+            <summary>
+            相机拍摄数据
+            </summary>
+        </member>
+        <member name="F:BslCamera.BCamera.m_callbackHandler">
+            <summary>
+            相机回调
+            </summary>
+        </member>
+        <member name="M:BslCamera.BCamera.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:BslCamera.BCamera.IsOpen">
+            <summary>
+            是否开启
+            </summary>
+        </member>
+        <member name="P:BslCamera.BCamera.LastError">
+            <summary>
+            获取最后相机的错误
+            </summary>
+        </member>
+        <member name="M:BslCamera.BCamera.Open(System.Int32)">
+            <summary>
+            打开相机
+            </summary>
+            <param name="index">相机序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:BslCamera.BCamera.Close">
+            <summary>
+            关闭相机
+            </summary>
+        </member>
+        <member name="M:BslCamera.BCamera.Snap">
+            <summary>
+            拍摄一张图片
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BslCamera.BCamera.RemovalCallbackHandler(PylonC.NET.PYLON_DEVICE_HANDLE)">
+            <summary>
+            相机被拔出移除回调
+            </summary>
+            <param name="hDev"></param>
+        </member>
+        <member name="M:BslCamera.BCamera.SetupGrab(System.Boolean)">
+            <summary>
+            启动采集
+            </summary>
+            <param name="isOneFrame"></param>
+        </member>
+        <member name="M:BslCamera.BCamera.CleanUpGrab">
+            <summary>
+            关闭采集
+            </summary>
+        </member>
+        <member name="M:BslCamera.BCamera.EnqueueTakenImage(PylonC.NET.PylonGrabResult_t)">
+            <summary>
+            尝试获取图片
+            </summary>
+            <param name="grabResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BslCamera.BCamera.Terminate">
+            <summary>
+            释放相机总资源
+            </summary>
+        </member>
+        <member name="M:BslCamera.BCamera.StaticInit">
+            <summary>
+            静态初始化
+            </summary>
+        </member>
+        <member name="M:BslCamera.BCamera.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:BslCamera.BCamera.Dispose">
+            <summary>
+            释放内存
+            </summary>
+        </member>
+        <member name="M:BslCamera.BitmapFactoryExpends.ConvertImageRawDataToBitmap(BslCamera.ImageRawData)">
+            <summary>
+            转换图像原始数据到bitmap图像
+            </summary>
+            <param name="imageRawData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BslCamera.DeviceEnumerator.Device.CompareTo(System.Object)">
+            <summary>
+            比较
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BslCamera.ImageRawData.#ctor(System.Int32,System.Int32,System.Byte[],System.Drawing.Imaging.PixelFormat)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="newWidth"></param>
+            <param name="newHeight"></param>
+            <param name="newBuffer"></param>
+            <param name="color"></param>
+        </member>
+    </members>
+</doc>

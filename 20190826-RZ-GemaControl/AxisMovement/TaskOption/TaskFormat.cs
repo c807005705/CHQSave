@@ -1,7 +1,6 @@
 ﻿using Interface.Interface;
 using Interface.Items;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -86,10 +85,14 @@ namespace TaskOption
         private Dictionary<OptionRun, Action<ServerRevItem>> runFunction = new Dictionary<OptionRun, Action<ServerRevItem>>();
         #endregion
         #region 接口方法
+        /// <summary>
+        /// 初始化接口
+        /// </summary>
         public void InitInterface()
         {
             // if (isInit) return;
-            runFunction.Clear(); 
+            runFunction.Clear();
+            runFunction.Add(OptionRun.DirMove, DirMove);
             runFunction.Add(OptionRun.FlatA, FlatA);
             runFunction.Add(OptionRun.Skill1, Skill1);
             runFunction.Add(OptionRun.Skill2, Skill2);
@@ -102,16 +105,12 @@ namespace TaskOption
 
         }
 
-      
+       
 
         public Config config { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         
-        /// <summary>
-        /// 开始执行接口
-        /// </summary>
-        /// <param name="interfaceItem"></param>
-        /// <returns></returns>
+
         public Task<ServerRevItem> DoInterface(InterfaceItem interfaceItem)
         {
             try
@@ -135,11 +134,6 @@ namespace TaskOption
                 return null;
             }
         }
-        /// <summary>
-        /// 执行接口
-        /// </summary>
-        /// <param name="serverRevItem"></param>
-        /// <returns></returns>
         public Task<ServerRevItem> DoInterface(ServerRevItem serverRevItem)
         {
             Task<ServerRevItem> task = new Task<ServerRevItem>(new Func<object, ServerRevItem>(obj => {
@@ -186,29 +180,7 @@ namespace TaskOption
         /// <returns></returns>
         public List<InterfaceItem> GetInterfaceList()
         {
-            List<InterfaceItem> interfaces = new List<InterfaceItem>();
-            Expends.GetEnumModeType<OptionRun, OptionAttribute>().Foreach(
-                c =>
-                {
-                    InterfaceItem interfaceItem = new InterfaceItem();
-                    JObject jObject = (JObject)JsonConvert.DeserializeObject(c.Msg);
-                    interfaceItem.Describe = jObject["Describe"].ToString();
-                    interfaceItem.InterfaceName = jObject["InterfaceName"].ToString();
-                    Dictionary<string, string> pairs = JsonConvert.DeserializeObject<Dictionary<string, string>>(
-                        jObject["Paramters"].ToString());
-                    interfaceItem.Paramters = new List<ParamterItem>();
-                    foreach (var item in pairs)
-                    {
-                        interfaceItem.Paramters.Add(new ParamterItem()
-                        {
-                            Name = item.Key,
-                            Value = item.Value
-                        });
-                    }
-                    pairs = null;
-                    interfaces.Add(interfaceItem);
-                });
-            return interfaces;
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -235,9 +207,6 @@ namespace TaskOption
                 Log.log("连接错误"+ex.ToString());
             }
         }
-        /// <summary>
-        /// 关闭
-        /// </summary>
         public void Close()
         {
             try

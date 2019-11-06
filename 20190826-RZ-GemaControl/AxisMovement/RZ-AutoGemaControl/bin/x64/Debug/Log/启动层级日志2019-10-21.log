@@ -1,0 +1,40 @@
+[2019/10/21 12:57:44 , Normal] ->  
+ [2019/10/21 12:58:32 , Normal] ->  
+ [2019/10/21 12:58:47 , Erro] -> 程序运行错误:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ControlDec.ConDevice.getMMPosition(Axis axis) 位置 G:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 124
+   在 ControlDec.ConDevice.GetAxisPosition(Axis axis) 位置 G:\新建文件夹\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\CHQSave-8d66df6e3dfd9e11badf05d140f9e3691389164b\20191014-RZ-GemaControl\AxisMovement\ControlDec\ConDevice.cs:行号 133
+   在 RZ_AutoGemaControl.GameConsole.GameConsole_KeyDown(Object sender, KeyEventArgs e) 位置 C:\Users\ASUS\Desktop\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 435
+   在 System.Windows.Forms.Control.OnKeyDown(KeyEventArgs e)
+   在 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   在 System.Windows.Forms.Form.ProcessKeyPreview(Message& m)
+   在 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   在 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.TextBox.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   在 RZ_AutoGemaControl.GameConsole.ShowWindow() 位置 C:\Users\ASUS\Desktop\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\GameConsole.cs:行号 355
+   在 RZ_AutoGemaControl.StartUp.Main(String[] argvs) 位置 C:\Users\ASUS\Desktop\20191014-RZ-GemaControl\AxisMovement\RZ-AutoGemaControl\StartUp.cs:行号 75 
+ [2019/10/21 12:59:31 , Normal] ->  
+ [2019/10/21 13:29:21 , Normal] ->  
+ [2019/10/21 13:35:11 , Normal] ->  
+ [2019/10/21 14:18:28 , Normal] ->  
+ [2019/10/21 14:21:58 , Normal] ->  
+ [2019/10/21 14:48:20 , Normal] ->  
+ [2019/10/21 15:10:28 , Normal] ->  
+ [2019/10/21 15:12:08 , Normal] ->  
+ [2019/10/21 15:25:28 , Normal] ->  
+ [2019/10/21 15:28:26 , Normal] ->  
+ [2019/10/21 15:33:49 , Normal] ->  
+ [2019/10/21 23:32:58 , Normal] ->  
+ [2019/10/21 23:51:52 , Normal] ->  
+ [2019/10/21 23:53:17 , Normal] ->  
+ [2019/10/21 23:54:02 , Normal] ->  
+ [2019/10/21 23:57:29 , Normal] ->  
+ [2019/10/21 23:58:11 , Normal] ->  
+ [2019/10/21 23:59:05 , Normal] ->  
+ 

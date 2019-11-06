@@ -17,8 +17,10 @@ namespace Interface.Items
     {
         public event PropertyChangedEventHandler PropertyChanged;
     }
+
     public class UserConfig : BaseNotify
     {
+
         private Rect cameraRect = new Rect();
         /// <summary>
         /// 控制板串口号
@@ -28,7 +30,9 @@ namespace Interface.Items
         /// 圆半径
         /// </summary>
         private double circleRadius = 10;
-      
+        public Point DiscCenter { get; set; }
+        
+
         /// <summary>
         /// 轮盘坐标
         /// </summary>
@@ -129,29 +133,7 @@ namespace Interface.Items
              
             }
         }
-        /// <summary>
-        /// 读取配置文件
-        /// </summary>
-        /// <param name="configPath"></param>
-        /// <returns></returns>
-        public static Config ReadConfigFromFile(string configPath)
-        {
-            if (!File.Exists(configPath)) return null;
-            JsonSerializerSettings setting = new JsonSerializerSettings();
-            setting.TypeNameHandling = TypeNameHandling.All;
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<Config>(System.Text.Encoding.UTF8.GetString(File.ReadAllBytes(configPath)), setting);
-        }
-        /// <summary>
-        /// 保存配置文件
-        /// </summary>
-        /// <param name="configPath"></param>
-        /// <param name="deviceConfig"></param>
-        public static void SaveDeviceConfigToFile(string configPath, Config deviceConfig)
-        {
-            JsonSerializerSettings setting = new JsonSerializerSettings();
-            setting.TypeNameHandling = TypeNameHandling.All;
-            File.WriteAllBytes(configPath, System.Text.Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(deviceConfig, setting)));
-        }
+       
 
     }
     /// <summary>

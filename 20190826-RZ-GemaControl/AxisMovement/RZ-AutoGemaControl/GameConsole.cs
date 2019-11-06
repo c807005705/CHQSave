@@ -1,4 +1,5 @@
-﻿using ControlDec;
+﻿using CameraLibs;
+using ControlDec;
 using ControlLib;
 using Device_Link_LTSMC;
 using Interface.Interface;
@@ -8,6 +9,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.IO.Ports;
 using System.Linq;
 using System.Text;
@@ -25,8 +27,9 @@ namespace RZ_AutoGemaControl
         public IServer Server { get; set; }
 
         public ITaskInoke TaskInoke { get; set; }
+       public ICamera Camera { get; set; }
+        public Camera camera { get; set; }
         public IActionInterface actionInterface { get; set; }
-        private Thread thread = null;
         private bool isClick = true;
         private bool IsCenter = true;
         /// <summary>
@@ -36,7 +39,19 @@ namespace RZ_AutoGemaControl
         public ILog Log { get; set; }
         public IControlDevice ConDevice { get; set; }
         public IControlCom controlCom { get; set; }
-        public IActionInterface action { get; set; }  
+        public IActionInterface action { get; set; }
+        /// <summary>
+        /// 普通日志
+        /// </summary>
+        public bool IsNormalLog { get; set; } = true;
+        /// <summary>
+        /// 警告日志
+        /// </summary>
+        public bool IsWaringLog { get; set; } = true;
+        /// <summary>
+        /// 错误日志
+        /// </summary>
+        public bool IsErrorLog { get; set; } = false;
 
         private Thread backtozerothread = null;
         public bool IsLink;
@@ -45,15 +60,16 @@ namespace RZ_AutoGemaControl
         public Point PointZ;
         public Point PointUV;
         public Point PointW;
-
+        public bool IsCameraOpen;
+        private bool Wdown;
+        private bool Ddown;
+        private bool Sdown;
+        private bool Adown;
+        private Thread getPictrue;
 
         public GameConsole()
         {
-
             InitializeComponent();
-
-
-
         }
         /// <summary>
         /// 连接设备
@@ -64,12 +80,31 @@ namespace RZ_AutoGemaControl
         {
             try
             {
-                ConDevice.Link(Config.FactoryConfig.AxisOtherInfo);
-                TaskInoke.InitInterface();
-                TaskInoke.Link("127.0.0.1", 8080);
-                IsLink = true;
-                MessageBox.Show("设备连接成功");
-
+                if (!ConDevice.IsLink)
+                {
+                    ConDevice.Link(Config.FactoryConfig.AxisOtherInfo);
+                    TaskInoke.InitInterface();
+                    TaskInoke.Link("127.0.0.1", 8080);
+                    if (ConDevice.IsLink)
+                    {
+                        MessageBox.Show("设备连接成功");
+                        ConnectingDevice.Enabled = false;
+                        StoRunning.Enabled = true;
+                        GetCoordinates();
+                        Camera.Open();
+                       getPictrue = new Thread(GetOnrPictrue);
+                        getPictrue.IsBackground = true;
+                        getPictrue.Start();                                           
+                    }
+                    else
+                    {
+                        MessageBox.Show("设备连接失败，请检查！");
+                    }    
+                }
+                else
+                {
+                    MessageBox.Show("设备已连接");
+                }
             }
             catch (Exception ex)
             {
@@ -80,49 +115,39 @@ namespace RZ_AutoGemaControl
             //PortNameText.SelectedItem = PortNameText.Items[0];
             //controlCom.Init(PortNameText.Text, 115200, Parity.None, 8, StopBits.None);
             //controlCom.Open();
-            GetCoordinates();
-            label4.Text = ConDevice.GetPositionInfo();
+           
         }
+
+        private void GetOnrPictrue()
+        {
+            
+            Task<Bitmap> bitmap = camera.GetOneBitmap();
+            bitmap.Start();
+            pictureBox11.Image = bitmap.Result;
+        }
+
         /// <summary>
         /// 获取实时坐标
         /// </summary>
         private void GetCoordinates()
-        {
-
-            double X;
-            double Y;
-            double Z;
-            double U;
-            double V;
-            double W;
+        {   
             new Thread(() =>
             {
                 while (true)
-                {
-                    //if (ConDevice.GetAxisPosition(Axis.X)-Convert.ToDouble( movingDistance.Text)>0)
-                    X = ConDevice.GetAxisPosition(Axis.X);
-                    Y = ConDevice.GetAxisPosition(Axis.Y);
-                    Z = ConDevice.GetAxisPosition(Axis.Z);
-                    U = ConDevice.GetAxisPosition(Axis.U);
-                    V = ConDevice.GetAxisPosition(Axis.V);
-                    W = ConDevice.GetAxisPosition(Axis.W);
+                {          
                     try
                     {
-                        PointXY.Y = Convert.ToInt32(Y / (5000 / 16));
-                        PointXY.X = Convert.ToInt32(X );
-                        PointXY.Y = Convert.ToInt32(Y);
-                        PointZ.X = Convert.ToInt32(Z );
-                        movePosition.BeginInvoke(new Action(() =>
-                           movePosition.Text = string.Format("X:{0},Y:{1},Z:{2}", PointXY.X, PointXY.Y, PointZ.X)));
-                        PointUV.X = Convert.ToInt32(U);
-                        PointUV.Y = Convert.ToInt32(V );
-                        PointW.X = Convert.ToInt32(W );
-                        killPosition.BeginInvoke(new Action(() =>
-                               killPosition.Text = string.Format("X:{0},Y:{1},Z:{2}", PointUV.X, PointUV.Y, PointW.X)));
-                        SpeedDisplay.BeginInvoke(new Action(() =>
-                          SpeedDisplay.Text = SpeedRun.Value.ToString()));
+                        PointXY.X = (int)(ConDevice.GetAxisPosition(Axis.X) );       
+                        PointXY.Y = (int)(ConDevice.GetAxisPosition(Axis.Y));
+                        PointZ.X = (int)(ConDevice.GetAxisPosition(Axis.Z));            
+                        PointUV.X = (int)(ConDevice.GetAxisPosition(Axis.U));
+                        PointUV.Y = (int)(ConDevice.GetAxisPosition(Axis.V));
+                        PointW.X = (int)(ConDevice.GetAxisPosition(Axis.W));
+                        AllPosition.BeginInvoke(new Action(() =>
+                               AllPosition.Text = string.Format("X:{0},Y:{1},Z:{2},U:{3},V:{4},W:{5}", PointXY.X, PointXY.Y, PointZ.X,PointUV.X, PointUV.Y, PointW.X)));
+                        AllPosition.BeginInvoke(new Action(() =>
+                          AllPosition.Text = DragBar.Value.ToString())); 
                     }
-
                     catch (Exception ex)
                     {
                         Log.waring("读取坐标信息异常");
@@ -141,7 +166,7 @@ namespace RZ_AutoGemaControl
         /// <param name="e"></param>
         private void ReturnToZero_Click(object sender, EventArgs e)
         {
-            BackZero();
+            ConDevice.AllToZero();
         }
         /// <summary>
         /// 设置
@@ -157,20 +182,7 @@ namespace RZ_AutoGemaControl
         /// <summary>
         /// 回零线程
         /// </summary>
-        public void BackZero()
-        {
-            backtozerothread = new Thread(BackTozeroThread)
-            {
 
-                IsBackground = true
-            };
-            backtozerothread.Start();
-        }
-
-        private void BackTozeroThread()
-        {
-            ConDevice.AllToZero();
-        }
         /// <summary>
         /// 断开连接
         /// </summary>
@@ -179,11 +191,10 @@ namespace RZ_AutoGemaControl
         private void DisconnectDevice_Click(object sender, EventArgs e)
         {
             try
-            {
-
-                controlCom.Close();
-
-
+            {   
+                ConDevice.Stop();
+                StoRunning.Enabled = false;
+                ConnectingDevice.Enabled = true;
             }
             catch (Exception)
             {
@@ -202,9 +213,8 @@ namespace RZ_AutoGemaControl
         /// <param name="e"></param>
         private void StoRunning_Click(object sender, EventArgs e)
         {
+
             ConDevice.StopAll();
-
-
         }
         /// <summary>
         /// 方向轴归零
@@ -260,75 +270,75 @@ namespace RZ_AutoGemaControl
                     switch (pictureBox.Name)
                     {
                         case "Movebackward"://前Y
-                            if (PointXY.Y * (5000 / 16) >= Convert.ToInt32(SpeedDisplay.Text) * (5000.00 / 16.00))
-                                ConDevice.MoveAxis(Axis.Y, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 16)), true, Direction.Back);
+                            if (PointXY.Y * (5000 / 16) >= Convert.ToInt32(moveDistance.Text) * (5000 / 16))
+                                ConDevice.MoveAxis(Axis.Y, (Convert.ToInt32(moveDistance.Text) * (5000 / 16)), true, Direction.Back);
                             else
                                 ConDevice.MoveAxis(Axis.Y, -PointXY.Y * (5000 / 16), true, Direction.Back);
                             break;
                         case "MoveForward"://后Y
-                            if (PointXY.Y + Convert.ToInt32(SpeedDisplay.Text) <= 200)
-                                ConDevice.MoveAxis(Axis.Y, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 16)), true, Direction.Forward);
+                            if (PointXY.Y + Convert.ToInt32(moveDistance.Text) <= 200)
+                                ConDevice.MoveAxis(Axis.Y, (Convert.ToInt32(moveDistance.Text) * (5000 / 16)), true, Direction.Forward);
                             else
                                 MessageBox.Show("超过可移动范围");
                             break;
                         case "MoveLift"://左X
-                            if (PointXY.X * (5000 / 25) >= Convert.ToDouble(Convert.ToInt32(SpeedDisplay.Text) * (5000 / 25)))
-                                ConDevice.MoveAxis(Axis.X, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 25)), true, Direction.Back);
+                            if (PointXY.X * (5000 / 25) >= Convert.ToDouble(Convert.ToInt32(moveDistance.Text) * (5000 / 25)))
+                                ConDevice.MoveAxis(Axis.X, (Convert.ToInt32(moveDistance.Text) * (5000 / 25)), true, Direction.Back);
                             else
                                 ConDevice.MoveAxis(Axis.X, -PointXY.X * (5000 / 25), true, Direction.Back);
                             break;
                         case "MoveRight"://右X
-                            if (PointXY.X + Convert.ToInt32(SpeedDisplay.Text) <= 100)
-                                ConDevice.MoveAxis(Axis.X, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 25)), true, Direction.Forward);
+                            if (PointXY.X + Convert.ToInt32(moveDistance.Text) <= 100)
+                                ConDevice.MoveAxis(Axis.X, (Convert.ToInt32(moveDistance.Text) * (5000 / 25)), true, Direction.Forward);
                             else
                                 MessageBox.Show("超过可移动范围");
                             break;
                         case "MoveUp"://上Z
-                            if (PointZ.X * (5000 / 7) >= Convert.ToDouble(Convert.ToInt32(SpeedDisplay.Text) * (5000 / 7)))
-                                ConDevice.MoveAxis(Axis.Z, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 7)), true, Direction.Forward);
+                            if (PointZ.X * (5000 / 7) >= Convert.ToDouble(Convert.ToInt32(moveDistance.Text) * (5000 / 7)))
+                                ConDevice.MoveAxis(Axis.Z, (Convert.ToInt32(moveDistance.Text) * (5000 / 7)), true, Direction.Forward);
                             else
 
                                 ConDevice.MoveAxis(Axis.Z, -PointZ.X * (5000 / 7), true, Direction.Forward);
                             break;
                         case "MoveDown"://下Z
-                            if (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 7) < (100000 / 7) && (PointZ.X + Convert.ToInt32(SpeedDisplay.Text)) <= 20)
-                                ConDevice.MoveAxis(Axis.Z, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 7)), true, Direction.Back);
+                            if (Convert.ToInt32(moveDistance.Text) * (5000 / 7) < (100000 / 7) && (PointZ.X + Convert.ToInt32(moveDistance.Text)) <= 20)
+                                ConDevice.MoveAxis(Axis.Z, (Convert.ToInt32(moveDistance.Text) * (5000 / 7)), true, Direction.Back);
                             else
                                 MessageBox.Show("超过可移动范围");
                             break;
                         case "SkillBackword":
-                            if (PointUV.Y * (5000 / 16) >= (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 16)))
-                                ConDevice.MoveAxis(Axis.V, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 16)), true, Direction.Back);
+                            if (PointUV.Y * (5000 / 16) >= (Convert.ToInt32(moveDistance.Text) * (5000 / 16)))
+                                ConDevice.MoveAxis(Axis.V, (Convert.ToInt32(moveDistance.Text) * (5000 / 16)), true, Direction.Back);
                             else
                                 ConDevice.MoveAxis(Axis.V, -PointUV.Y * (5000 / 16), true, Direction.Back);
                             break;
                         case "SkillForword":
-                            if (PointUV.Y + Convert.ToInt32(SpeedDisplay.Text) <= 200)
-                                ConDevice.MoveAxis(Axis.V, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 16)), true, Direction.Forward);
+                            if (PointUV.Y + Convert.ToInt32(moveDistance.Text) <= 200)
+                                ConDevice.MoveAxis(Axis.V, (Convert.ToInt32(moveDistance.Text) * (5000 / 16)), true, Direction.Forward);
                             else
                                 MessageBox.Show("超过可移动范围");
                             break;
                         case "SkillLift":
-                            if (PointUV.X * (5000 / 25) >= (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 25)))
-                                ConDevice.MoveAxis(Axis.U, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 25)), true, Direction.Back);
+                            if (PointUV.X * (5000 / 25) >= (Convert.ToInt32(moveDistance.Text) * (5000 / 25)))
+                                ConDevice.MoveAxis(Axis.U, (Convert.ToInt32(moveDistance.Text) * (5000 / 25)), true, Direction.Back);
                             else
                                 ConDevice.MoveAxis(Axis.U, -PointUV.X * (5000 / 25), true, Direction.Back);
                             break;
                         case "SkillRight":
-                            if (PointUV.X + Convert.ToInt32(SpeedDisplay.Text) <= 200)
-                                ConDevice.MoveAxis(Axis.U, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 25)), true, Direction.Forward);
+                            if (PointUV.X + Convert.ToInt32(moveDistance.Text) <= 200)
+                                ConDevice.MoveAxis(Axis.U, (Convert.ToInt32(moveDistance.Text) * (5000 / 25)), true, Direction.Forward);
                             else
                                 MessageBox.Show("超过可移动范围");
                             break;
                         case "SkillUp":
-                            if (PointW.X * (5000 / 7) >= (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 7)))
-                                ConDevice.MoveAxis(Axis.W, (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 7)), true, Direction.Forward);
+                            if (PointW.X * (5000 / 7) >= (Convert.ToInt32(moveDistance.Text) * (5000 / 7)))
+                                ConDevice.MoveAxis(Axis.W, (Convert.ToInt32(moveDistance.Text) * (5000 / 7)), true, Direction.Forward);
                             else
                                 ConDevice.MoveAxis(Axis.W, -PointUV.X * (5000 / 7), true, Direction.Forward);
                             break;
                         case "SkillDown":
-                            if (Convert.ToInt32(SpeedDisplay.Text) * (5000 / 7) < (100000 / 7) && (PointW.X + Convert.ToInt32(SpeedDisplay.Text) <= 23))
-                                ConDevice.MoveAxis(Axis.W, Convert.ToInt32(SpeedDisplay.Text) * (5000 / 7), true, Direction.Back);
+                            if (Convert.ToInt32(moveDistance.Text) * (5000 / 7) < (100000 / 7) && (PointW.X + Convert.ToInt32(moveDistance.Text) <= 23))
+                                ConDevice.MoveAxis(Axis.W, Convert.ToInt32(moveDistance.Text) * (5000 / 7), true, Direction.Back);
                             else
                                 MessageBox.Show("超过可移动范围");
                             break;
@@ -354,67 +364,62 @@ namespace RZ_AutoGemaControl
             this.ShowDialog();
 
         }
-
-
-
-        public void Button1_Click(object sender, EventArgs e)
-        {
-            ConDevice.moveX();
-
-        }
-
-
-        private static void test(object source, ElapsedEventArgs e)
-        {
-            MessageBox.Show("");
-
-        }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            timer1.Stop();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            actionInterface.FlatA(8);
-            actionInterface.Skill1(70.00, 100.00, 7);
-            actionInterface.FlatA(-8);
-
-        }
-
-        private void button2_Click_2(object sender, EventArgs e)
-        {
-            actionInterface.FlatA(8);
-
-            actionInterface.FlatA(-8);
-
-        }
-
         private void GameConsole_Load(object sender, EventArgs e)
         {
-            this.KeyPreview = true;
+          this.KeyPreview = true;
+            Log.LogMsg += LogMsg;
+
+           
         }
 
-
+        private void LogMsg(LogType obj, string msg)
+        {
+            switch (obj)
+            {
+                case LogType.Normal:
+                    if (!IsNormalLog)
+                        return;
+                    break;
+                case LogType.Waring:
+                    if (!IsWaringLog)
+                        return;
+                    break;
+                case LogType.Error:
+                    if (!IsErrorLog)
+                        return;
+                    break;
+                default:
+                    break;
+            }
+        }
 
         private void GameConsole_KeyUp(object sender, KeyEventArgs e)
         
         {
             try
             {
-                if (Keys.A == e.KeyCode || Keys.D == e.KeyCode)
+              
+                switch (e.KeyValue)
                 {
-                    //ConDevice.stopAxis(Axis.X);
-                    //MessageBox.Show("a||d");
-                }
-                else if (Keys.S == e.KeyCode || Keys.W == e.KeyCode)
-                {
-                   // ConDevice.stopAxis(Axis.Y);
-                   // MessageBox.Show("s||w");
+                    case 'W':
+
+                        Wdown = false;
+                        break;
+                    case 'D':
+
+                        Ddown = false;
+                        break;
+                    case 'S':
+
+                        Sdown = false;
+                        break;
+                    case 'A':
+
+                        Adown = false;
+                        break;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("错误" + ex);
             }
@@ -422,78 +427,122 @@ namespace RZ_AutoGemaControl
 
         private void GameConsole_KeyDown(object sender, KeyEventArgs e)
         {
-            
-            double XPosition=  ConDevice.GetAxisPosition(Axis.X);
-            double  YPosition= ConDevice.GetAxisPosition(Axis.Y);
-            double UPosition = ConDevice.GetAxisPosition(Axis.U); 
-            double VPosition = ConDevice.GetAxisPosition(Axis.V);
 
             try
             {
-                if (Keys.D == e.KeyCode)
-                {                 
-                   
-                   
-                    if (IsCenter)
-                    {
-                       // ConDevice.PreHeight(Axis.Z, 12);
-                        ConDevice.PreHeight(Axis.Z, 6);
-                        IsCenter = false;
-                    }
-                    ConDevice.DirMove(330);
-                }
-                else if (Keys.W == e.KeyCode)
-                {                   
-                   
-                    
-                    if (IsCenter)
-                    {
-                       // ConDevice.PreHeight(Axis.Z, 12);
-                        ConDevice.PreHeight(Axis.Z, 6);
-                        IsCenter = false;
-                    }
-                    ConDevice.DirMove(40);
-                }
-                else if (Keys.A == e.KeyCode)
-                {                  
-                   
-                   
-                    if (IsCenter)
-                    {
-                        //ConDevice.PreHeight(Axis.Z, 12);
-                        ConDevice.PreHeight(Axis.Z, 6);
-                        IsCenter = false;
-                    }
-                    ConDevice.DirMove(150);
-                }
-                else if (Keys.S == e.KeyCode)
+                switch (e.KeyValue)
                 {
-                   
-                   
+                    case 'W':
+                        if (  Wdown == false)
+                            Wdown = true;
+                        break;
+                    case 'D':
+                        if (Ddown == false)
+                            Ddown = true;
+                        break;
+                    case 'S':
+                        if (Sdown == false)
+                            Sdown = true;
+                        break;
+                    case 'A':
+                        if (Adown == false)
+                            Adown = true;
+                        break;
+                }
+
+                if (Wdown && !Ddown && !Adown && !Sdown)
+                {
                     if (IsCenter)
                     {
-                        //ConDevice.PreHeight(Axis.Z, 12);
                         ConDevice.PreHeight(Axis.Z, 6);
                         IsCenter = false;
                     }
-                    ConDevice.DirMove(240);
+                    ConDevice.DirMove(90);
+
                 }
+                else if (Wdown && Ddown)
+                {
+                    if (IsCenter)
+                    {
+                        ConDevice.PreHeight(Axis.Z, 6);
+                        IsCenter = false;
+                    }
+                    ConDevice.DirMove(45);
+
+                }
+                else if (!Wdown && Ddown && !Adown && !Sdown)
+                {
+                    if (IsCenter)
+                    {
+                        ConDevice.PreHeight(Axis.Z, 6);
+                        IsCenter = false;
+                    }
+                    ConDevice.DirMove(0);
+                }
+                else if (Sdown && Ddown)
+                {
+                    if (IsCenter)
+                    {
+                        ConDevice.PreHeight(Axis.Z, 6);
+                        IsCenter = false;
+                    }
+                    ConDevice.DirMove(315);
+                }
+                else if (!Wdown && !Ddown && !Adown && Sdown)
+                {
+                    if (IsCenter)
+                    {
+                        ConDevice.PreHeight(Axis.Z, 6);
+                        IsCenter = false;
+                    }
+                    ConDevice.DirMove(270);
+                }
+                else if (Sdown && Adown)
+                {
+                    if (IsCenter)
+                    {
+                        ConDevice.PreHeight(Axis.Z, 6);
+                        IsCenter = false;
+                    }
+                    ConDevice.DirMove(225);
+                }
+                else if (!Wdown && !Ddown && Adown && !Sdown)
+                {
+                    if (IsCenter)
+                    {
+                        ConDevice.PreHeight(Axis.Z, 6);
+                        IsCenter = false;
+                    }
+                    ConDevice.DirMove(180);
+                }
+                else if (Adown && Wdown)
+                {
+                    if (IsCenter)
+                    {
+                        ConDevice.PreHeight(Axis.Z, 6);
+                        IsCenter = false;
+                    }
+                    ConDevice.DirMove(135);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            try
+            {
                 switch (e.KeyCode)
                 {
-                   
                     case Keys.K:
-                        ConDevice.MoveToPositionUV(61,143);
-                       
+                        ConDevice.MoveToPositionUV(61, 143);
+
                         if (isClick)
                         {
-                            
                             ConDevice.PreHeight(Axis.W, 12);
-                            
+
                             isClick = false;
-                        } 
+                        }
                         ConDevice.SkillClick(40000, 9);
-
-
                         break;
                     case Keys.J:
                         ConDevice.MoveToPositionUV(83, 145);
@@ -527,15 +576,83 @@ namespace RZ_AutoGemaControl
                     case Keys.Q:
                         ConDevice.AxisMoveTo(Axis.Z, -12);
                         ConDevice.MoveToPositionXY(59, 140);
-                        ConDevice.MoveClick(40000,9);
+                        ConDevice.MoveClick(40000, 9);
                         IsCenter = true;
                         break;
-                }              
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("错误" + ex);
             }
+        }     
+        /// <summary>
+        /// 窗口关闭前
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GameConsole_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (IsCameraOpen)
+            {
+                Camera.Dispose();
+                Camera.Close();
+            }
+           
+           
+        }
+
+        private void StartRecording_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void SpeedDisplay_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (moveDistance.Text == string.Empty)
+                {
+                    return;
+                }
+                else
+                {
+
+                    int MoveDistance = Convert.ToInt32(moveDistance.Text);
+
+                    if (MoveDistance < DragBar.Minimum || MoveDistance > DragBar.Maximum)
+                        return;
+                    DragBar.Value = MoveDistance;
+                    
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void moveDistance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '\b')//这是允许输入退格键 
+            {
+                int len = moveDistance.Text.Length;
+                if (len < 1 && e.KeyChar == '0')
+                {
+                    e.Handled = true;
+                }
+                else if ((e.KeyChar < '0') || (e.KeyChar > '9'))//这是允许输入0-9数字 
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void DragBar_Scroll(object sender, EventArgs e)
+        {
+            DragBar.Minimum = 0;
+            DragBar.Maximum = 100;
+            moveDistance.Text = DragBar.Value.ToString();
         }
     }
 }

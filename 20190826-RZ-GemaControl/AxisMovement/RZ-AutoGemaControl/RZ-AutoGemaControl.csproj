@@ -63,6 +63,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IService.cs" />
@@ -159,6 +160,10 @@
     <None Include="Resources\x_下降线.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CameraLibs\CameraLibs.csproj">
+      <Project>{7cda5dad-e2bb-49d7-b0b6-189d1c5af97c}</Project>
+      <Name>CameraLibs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ControlDec\ControlDec.csproj">
       <Project>{6073444A-1F07-484F-833D-1C39FB57CE5B}</Project>
       <Name>ControlDec</Name>
